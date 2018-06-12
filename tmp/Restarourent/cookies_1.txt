@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.httpcoder.com	TRUE	/	FALSE	1999999999	__cfduid	d9dd0f0ea268bf8e41e028c8681f662511528779642
-

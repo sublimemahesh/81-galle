@@ -44,15 +44,15 @@
                                                 <span class="icon-bar"></span>
                                             </button>
                                             <div class="csi-logo">
-                                                <a href="index.html">
+                                                <a href="index.php">
                                                     <img src="assets/img/logo.png" alt="Logo"/>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="collapse navbar-collapse">
                                             <ul class="nav navbar-nav csi-nav">
-                                                <li><a href="./">Home</a></li>
-                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="index.php">Home</a></li>
+                                                <li><a href="about.php">About Us</a></li>
                                                 <li><a href="#">Menu</a></li>
                                                 <li><a href="#">Offer</a></li>
                                                 <li><a href="#">Gallery</a></li>
