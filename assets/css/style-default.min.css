@@ -864,6 +864,15 @@ blockquote:before{
     background-size:cover;
     color:#fff
 }
+.csi-aboutbanner{
+    background:url(../img/footer-bg.jpg) top center no-repeat;
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    color:#fff
+   
+}
 .csi-banner .csi-inner{
     padding:28rem 0
 }

@@ -854,9 +854,6 @@
                     </div><!-- //.INNER -->
                 </div>
             </section>
-            <!--Subscribe END-->
-
-            <!--footer-->
             <?php
             include './footer.php';
             ?>
