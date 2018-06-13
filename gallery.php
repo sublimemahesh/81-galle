@@ -51,7 +51,9 @@
         <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
         <link rel="manifest" href="assets/img/favicon/manifest.json">
-
+        <link href="assets/css/simplelightbox.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/simplelightbox.css" rel="stylesheet" type="text/css"/>
+        
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" media="all" />
 
@@ -73,7 +75,7 @@
         <link id="csi-master-style" rel="stylesheet" href="assets/css/style-default.min.css" media="all" />
 
         <!-- MODERNIZER CSS  -->
-        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
 
     </head>
     <body class="page page-template">
@@ -126,94 +128,57 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="csi-heading">
-                                        <h3 class="subtitle">About our History</h3>
-                                        <h2 class="title">Welcome to The Foodking</h2>
+                                        <h3 class="subtitle">Our Gallery Collection</h3>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="csi-about-content">
-                                        <p>
-                                            We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                            Praesent non nunc turpis. Cras vel pretium ligula, ut lacinia lorem. Sed porttitor efficitur arcu, eu vehicula augue suscipit a. Sed vitae est vel elit vulputate sollicitudin. Donec vel est dui. Morbi at diam euismod, tincidunt ante eu, convallis quam. In vitae viverra sem. Vivamus vestibulum velit eu dolor dignissim, ac suscipit velit vehicula. Donec eleifend sem massa, et euismod orci tempus ut. Integer non semper turpis, sit amet elementum velit. Aliquam tincidunt posuere pulvinar. Vestibulum faucibus felis quis blandit ornare. Praesent semper ultricies neque ut efficitur. Nullam euismod massa ac suscipit tristique. Donec id elementum eros. Quisque semper suscipit mi, nec faucibus velit hendrerit nec.
-                                        </p>
-                                        <p>
-                                            We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                            semper suscipit mi, nec faucibus velit hendrerit nec.
-                                        </p>
+
+                            <section id="gallery">
+                                <div class="row">
+                                <div class="container col-md-12 col-md-3">
+                                    <div class="gallery">
+                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" /></a>
+                                     
+                                        <div class="clear"></div>
                                     </div>
+                                    
                                 </div>
-                            </div>
-                        </div><!-- //.CONTAINER -->
-                    </div><!-- //.INNER -->
-                </div>
+                                     <div class="container col-md-12 col-md-3">
+                                    <div class="gallery">
+                                        <a href="assets/img/speacial-item/special-item1.jpg" class="big g-image"><img src="assets/img/speacial-item/special-item1.jpg" alt="" title="Beautiful Image" /></a>
+                                      
+                                        <div class="clear"></div>
+                                    </div>
+                                    
+                                </div>
+                                     <div class="container col-md-12 col-md-3">
+                                    <div class="gallery">
+                                        <a href="assets/img/speacial-item/special-item3.jpg" class="big"><img src="assets/img/speacial-item/special-item3.jpg" alt="" title="Beautiful Image" /></a>
+                                     
+                                        <div class="clear"></div>
+                                    </div>
+                                    
+                                </div>
+                                     <div class="container col-md-12 col-md-3">
+                                    <div class="gallery">
+                                        <a href="assets/img/speacial-item/special-item4.jpg" class="big"><img src="assets/img/speacial-item/special-item4.jpg" alt="" title="Beautiful Image" /></a>
+                                       
+                                        <div class="clear"></div>
+                                    </div>
+                                    
+                                </div>
+                                   
+                                  
+                                    </div>
+                                 
+                                    
+                                </div>
+                            </section>
+                        </div><!-- //.INNER -->
+                    </div>
             </section>
-            <!--ABOUT END-->
 
-
-            <!--TEAM-->
-
-            <!--testimonials-->
-            <section>
-                <div id="csi-testimonials" class="csi-testimonials">
-                    <div class="csi-inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="testi-single">
-                                        <div class="author-area">
-                                            <figure>
-                                                <a class="author-img" href="#"><img src="assets/img/eye-opthalmology-optic-vision-512.png" alt="Client"/></a>
-
-                                            </figure>
-                                            <div class="author-info">
-                                                <h4 class="title"><a href="#">Vision</a></h4>
-
-                                            </div>
-                                        </div>
-                                        <div class="text">
-                                            <p>
-                                                Morbi imperdiet sollicitudin rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem justo, congue dapibus scelerisque at, ultricies quis mi. Pellentesque auctor
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="testi-single">
-                                        <div class="author-area">
-                                            <figure>
-                                                <a class="author-img" href="#"><img src="assets/img/mission.png" alt="Client"/></a>
-
-                                            </figure>
-                                            <div class="author-info">
-                                                <h4 class="title"><a href="#">Mission</a></h4>
-
-                                            </div>
-                                        </div>
-                                        <div class="text">
-                                            <p>
-                                                Morbi imperdiet sollicitudin rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem justo, congue dapibus scelerisque at, ultricies quis mi. Pellentesque auctor
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div><!-- //.CONTAINER -->
-                    </div><!-- //.INNER -->
-                </div>
-            </section> <!--//.testimonials-->
-
-
-            <!--MILESTONE-->
-         
-            <!--MILESTONE END-->
 
 
             <?php
@@ -240,5 +205,87 @@
         <script src="assets/libs/counterup/jquery.counterup.min.js"></script>
         <script src="assets/js/custom.script.js"></script>
         <script src="switcher/js/switcher.js"></script> 
+        <script src="assets/js/simple-lightbox.min.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">/* <![CDATA[ */(function (d, s, a, i, j, r, l, m, t) {
+                try {
+                    l = d.getElementsByTagName('a');
+                    t = d.createElement('textarea');
+                    for (i = 0; l.length - i; i++) {
+                        try {
+                            a = l[i].href;
+                            s = a.indexOf('/cdn-cgi/l/email-protection');
+                            m = a.length;
+                            if (a && s > -1 && m > 28) {
+                                j = 28 + s;
+                                s = '';
+                                if (j < m) {
+                                    r = '0x' + a.substr(j, 2) | 0;
+                                    for (j += 2; j < m && a.charAt(j) != 'X'; j += 2)
+                                        s += '%' + ('0' + ('0x' + a.substr(j, 2) ^ r).toString(16)).slice(-2);
+                                    j++;
+                                    s = decodeURIComponent(s) + a.substr(j, m - j)
+                                }
+                                t.innerHTML = s.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                                l[i].href = 'mailto:' + t.value
+                            }
+                        } catch (e) {
+                        }
+                    }
+                } catch (e) {
+                }
+            })(document);/* ]]> */</script>
 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="assets/js/simple-lightbox.js" type="text/javascript"></script>
+        <script src="assets/js/simple-lightbox.min.js" type="text/javascript"></script>
+        <!--light box script-->
+        <script>
+                    $(function () {
+                        var $gallery = $('.gallery a').simpleLightbox();
+
+                        $gallery.on('show.simplelightbox', function () {
+                            console.log('Requested for showing');
+                        })
+                                .on('shown.simplelightbox', function () {
+                                    console.log('Shown');
+                                })
+                                .on('close.simplelightbox', function () {
+                                    console.log('Requested for closing');
+                                })
+                                .on('closed.simplelightbox', function () {
+                                    console.log('Closed');
+                                })
+                                .on('change.simplelightbox', function () {
+                                    console.log('Requested for change');
+                                })
+                                .on('next.simplelightbox', function () {
+                                    console.log('Requested for next');
+                                })
+                                .on('prev.simplelightbox', function () {
+                                    console.log('Requested for prev');
+                                })
+                                .on('nextImageLoaded.simplelightbox', function () {
+                                    console.log('Next image loaded');
+                                })
+                                .on('prevImageLoaded.simplelightbox', function () {
+                                    console.log('Prev image loaded');
+                                })
+                                .on('changed.simplelightbox', function () {
+                                    console.log('Image changed');
+                                })
+                                .on('nextDone.simplelightbox', function () {
+                                    console.log('Image changed to next');
+                                })
+                                .on('prevDone.simplelightbox', function () {
+                                    console.log('Image changed to prev');
+                                })
+                                .on('error.simplelightbox', function (e) {
+                                    console.log('No image found, go to the next/prev');
+                                    console.log(e);
+                                });
+                    });
+        </script>
+        
     </body>
