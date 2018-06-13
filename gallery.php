@@ -137,38 +137,32 @@
                                
                            <div class="col-md-3">
                                     <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" /></a>
-                                     
-                                        <div class="clear"></div>
+                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" style="padding-bottom: 31px;"/></a>
+                                      <div class="clear"></div>
                                     </div>
                                     
                                 </div> 
                                 
                                 <div class="col-md-3">
                                     <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" /></a>
-                                     
+                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" style="padding-bottom: 31px;"/></a>
                                         <div class="clear"></div>
                                     </div>
                                     
                                 </div>  
                                 <div class="col-md-3">
                                     <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" /></a>
-                                     
+                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" style="padding-bottom: 31px;"/></a>
                                         <div class="clear"></div>
                                     </div>
                                     
                                 </div>  
                                 <div class="col-md-3">
                                     <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" /></a>
-                                     
+                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" style="padding-bottom: 31px;"/></a>
                                         <div class="clear"></div>
                                     </div>
-                                    
                                 </div>  
-                                
                             </section>
                         </div><!-- //.INNER -->
                     </div>
