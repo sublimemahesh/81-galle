@@ -51,9 +51,7 @@
         <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
         <link rel="manifest" href="assets/img/favicon/manifest.json">
-        <link href="assets/css/simplelightbox.min.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/css/simplelightbox.css" rel="stylesheet" type="text/css"/>
-        
+
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" media="all" />
 
@@ -75,7 +73,7 @@
         <link id="csi-master-style" rel="stylesheet" href="assets/css/style-default.min.css" media="all" />
 
         <!-- MODERNIZER CSS  -->
-
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
     </head>
     <body class="page page-template">
@@ -95,6 +93,11 @@
 
 
             <!--Banner-->
+
+            <!--Banner END-->
+
+
+            <!--ABOUT-->
             <section>
                 <div class="csi-banner csi-banner-inner">
                     <div class="csi-inner">
@@ -103,10 +106,10 @@
                                 <div class="col-xs-12">
                                     <div class="csi-heading-area">
                                         <h2 class="csi-heading">
-                                            About Our History
+                                            Get In Touch / Contact
                                         </h2>
                                         <ul class="breadcrumb">
-                                            <li><a href="index.html"><i class="icon-home6"></i>Home</a></li>
+                                            <li><a href="index.php"><i class="icon-home6"></i>Home</a></li>
                                             <li class="active">Contact</li>
                                         </ul>
                                     </div>
@@ -117,61 +120,78 @@
                     </div>
                 </div>
             </section>
-            <!--Banner END-->
-
-
-            <!--ABOUT-->
             <section>
-                <div id="csi-about" class="csi-about csi-about-inner">
+                <div id="csi-contact" class="csi-contact">
                     <div class="csi-inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="csi-heading">
-                                        <h3 class="subtitle">Our Gallery Collection</h3>
+                        <div class="contact-top-area">
+                            <div class="contact-top-left">
+                                <div class="contact-info">
+                                    <div class="csi-box">
+                                        <span class="csi-icon"><i class="fa fa-headphones"></i></span>
+                                        <div class="address">
+                                            <p>+2545-8546-XXX</p>
+                                            <p>+2545-8546-XXX</p>
+                                        </div>
+                                    </div>
+                                    <div class="csi-box">
+                                        <span class="csi-icon"><i class="fa fa-envelope"></i></span>
+                                        <div class="address">
+                                            <p>Email:<a href="http://httpcoder.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6d07050203430902082d08150c001d0108430e0200">[email&#160;protected]</a></p>
+                                            <p><a href="http://httpcoder.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d1bbb9bebfffb5beb491b4a9b0bca1bdb4e3ffb2bebc">[email&#160;protected]</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="csi-box">
+                                        <span class="csi-icon"><i class="fa fa-map-marker"></i></span>
+                                        <div class="address">
+                                            <p>123 Grand Tower - 45 Street Name,
+                                                City Name, United State</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <section id="gallery">
-                               
-                           <div class="col-md-3">
-                                    <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" /></a>
-                                     
-                                        <div class="clear"></div>
-                                    </div>
-                                    
-                                </div> 
-                                
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" /></a>
-                                     
-                                        <div class="clear"></div>
-                                    </div>
-                                    
-                                </div>  
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" /></a>
-                                     
-                                        <div class="clear"></div>
-                                    </div>
-                                    
-                                </div>  
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" /></a>
-                                     
-                                        <div class="clear"></div>
-                                    </div>
-                                    
-                                </div>  
-                                
-                            </section>
-                        </div><!-- //.INNER -->
-                    </div>
+                            <div class="contact-top-right">
+                                <div class="innerpage-section">
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.716723132564!2d80.21369891476817!3d6.033559295630301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb5c8067f1%3A0x4768397502edf93!2sSublime+Holdings!5e0!3m2!1sen!2slk!4v1528880526695" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-offset-2 col-sm-8">
+                                    <form method="POST" class="csi-contactform" action="http://httpcoder.com/demo/html/foodking/view/php/form-handler.php">
+                                        <div class="form-group">
+                                            <input type="text" name="csiname" class="form-control csiname" id="csiname" placeholder="Enter Your Name ..." required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="csiemail" class="form-control csiemail" id="csiemail" placeholder="Enter Email address ..." required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="csisubject" class="form-control csisubject" id="csisubject" placeholder="Enter Email Subject ..." required>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control csimessage" name="csimessage" id="csimessage" rows="5" placeholder="Leave me A Massage ..." required></textarea>
+                                        </div>
+                                        <button type="submit" name="submit" value="contact-form" class="csi-btn hvr-glow hvr-radial-out csisend csi-send">Send Massage</button>
+                                    </form>
+                                    <!-- MODAL SECTION -->
+                                    <div id="csi-form-modal" class="modal fade csi-form-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content csi-modal-content">
+                                                <div class="modal-header csi-modal-header">
+                                                    <button type="button" class="close brand-color-hover" data-dismiss="modal" aria-label="Close">
+                                                        <i class="fa fa-power-off"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="alert csi-form-msg" role="alert"></div>
+                                                </div> <!--//MODAL BODY-->
+                                            </div>
+                                        </div>
+                                    </div> <!-- //MODAL -->
+                                </div> <!--//.COL-->
+                            </div>
+                        </div><!-- //.CONTAINER -->
+                    </div><!-- //.INNER -->
                 </div>
             </section>
 
@@ -201,87 +221,5 @@
         <script src="assets/libs/counterup/jquery.counterup.min.js"></script>
         <script src="assets/js/custom.script.js"></script>
         <script src="switcher/js/switcher.js"></script> 
-        <script src="assets/js/simple-lightbox.min.js" type="text/javascript"></script>
-        
-        <script type="text/javascript">/* <![CDATA[ */(function (d, s, a, i, j, r, l, m, t) {
-                try {
-                    l = d.getElementsByTagName('a');
-                    t = d.createElement('textarea');
-                    for (i = 0; l.length - i; i++) {
-                        try {
-                            a = l[i].href;
-                            s = a.indexOf('/cdn-cgi/l/email-protection');
-                            m = a.length;
-                            if (a && s > -1 && m > 28) {
-                                j = 28 + s;
-                                s = '';
-                                if (j < m) {
-                                    r = '0x' + a.substr(j, 2) | 0;
-                                    for (j += 2; j < m && a.charAt(j) != 'X'; j += 2)
-                                        s += '%' + ('0' + ('0x' + a.substr(j, 2) ^ r).toString(16)).slice(-2);
-                                    j++;
-                                    s = decodeURIComponent(s) + a.substr(j, m - j)
-                                }
-                                t.innerHTML = s.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-                                l[i].href = 'mailto:' + t.value
-                            }
-                        } catch (e) {
-                        }
-                    }
-                } catch (e) {
-                }
-            })(document);/* ]]> */</script>
 
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script src="assets/js/simple-lightbox.js" type="text/javascript"></script>
-        <script src="assets/js/simple-lightbox.min.js" type="text/javascript"></script>
-        <!--light box script-->
-        <script>
-                    $(function () {
-                        var $gallery = $('.gallery a').simpleLightbox();
-
-                        $gallery.on('show.simplelightbox', function () {
-                            console.log('Requested for showing');
-                        })
-                                .on('shown.simplelightbox', function () {
-                                    console.log('Shown');
-                                })
-                                .on('close.simplelightbox', function () {
-                                    console.log('Requested for closing');
-                                })
-                                .on('closed.simplelightbox', function () {
-                                    console.log('Closed');
-                                })
-                                .on('change.simplelightbox', function () {
-                                    console.log('Requested for change');
-                                })
-                                .on('next.simplelightbox', function () {
-                                    console.log('Requested for next');
-                                })
-                                .on('prev.simplelightbox', function () {
-                                    console.log('Requested for prev');
-                                })
-                                .on('nextImageLoaded.simplelightbox', function () {
-                                    console.log('Next image loaded');
-                                })
-                                .on('prevImageLoaded.simplelightbox', function () {
-                                    console.log('Prev image loaded');
-                                })
-                                .on('changed.simplelightbox', function () {
-                                    console.log('Image changed');
-                                })
-                                .on('nextDone.simplelightbox', function () {
-                                    console.log('Image changed to next');
-                                })
-                                .on('prevDone.simplelightbox', function () {
-                                    console.log('Image changed to prev');
-                                })
-                                .on('error.simplelightbox', function (e) {
-                                    console.log('No image found, go to the next/prev');
-                                    console.log(e);
-                                });
-                    });
-        </script>
-        
     </body>

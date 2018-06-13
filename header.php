@@ -56,7 +56,7 @@
                                                 <li><a href="menu.php">Menu</a></li>
                                                 <li><a href="#">Offer</a></li>
                                                 <li><a href="gallery.php">Gallery</a></li>
-                                                <li><a href="#">Contact Us</a></li>
+                                                <li><a href="contact.php">Contact Us</a></li>
                                                 <li><a class="csi-btn csi-scroll" href="#csi-reservation">Reservation</a></li>
                                             </ul>
                                         </div>
