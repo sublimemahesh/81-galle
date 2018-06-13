@@ -3068,8 +3068,8 @@ textarea.form-control{
 }
 .csi-contact .contact-top-area .contact-top-left{
     background:#00695c;
-    padding:11rem 0 8.4rem;
-    width:45%
+    padding: 14rem 0 8.4rem;
+    width:50%
 }
 .csi-contact .contact-top-area .contact-top-left blockquote{
     color:#fff
@@ -3105,7 +3105,7 @@ textarea.form-control{
     margin:0
 }
 .csi-contact .contact-top-area .contact-top-right{
-    width:55%
+    width:50%
 }
 .csi-contact .csi-contactform{
     text-align:center
