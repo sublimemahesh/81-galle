@@ -86,14 +86,14 @@
                                 <div class="col-sm-4">
                                     <div class="about-top-single">
                                         <a href="#"><img src=assets/img/about-icon.png alt="about-icon"></a>
-                                        <h3 class="title"><a href="#">Dinner & Dessert</a></h3>
+                                        <h3 class="title"><a href="#">Hot & Delicious</a></h3>
                                         <p>Beetroot water spinach okra water chestnut ricebean pea.</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="about-top-single">
                                         <a href="#"><img src=assets/img/about-icon2.png alt="about-icon"></a>
-                                        <h3 class="title"><a href="#">Breakfast</a></h3>
+                                        <h3 class="title"><a href="#">No Added Msg</a></h3>
                                         <p>Beetroot water spinach okra water chestnut ricebean pea.</p>
                                     </div>
                                 </div>
@@ -147,8 +147,8 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="csi-heading">
-                                        <h3 class="subtitle">Special Food Items</h3>
-                                        <h2 class="title">Chef Selection</h2>
+                                        <h3 class="subtitle">Food Items</h3>
+                                        <h2 class="title">Special Offer</h2>
                                     </div>
                                 </div>
                             </div>
@@ -229,81 +229,7 @@
                                             </div>
                                         </div><!--//.csi-special-single-->
                                     </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="#"><img src="assets/img/speacial-item/special-item4.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="#">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">Indian Food</h4>
-                                                    <h3 class="title"><a href="#">Lagrotas Nanos</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="#"><img src="assets/img/speacial-item/special-item5.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="#">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">American Food</h4>
-                                                    <h3 class="title"><a href="#">American Humburger</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="#"><img src="assets/img/speacial-item/special-item6.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="#">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">Mexican Food</h4>
-                                                    <h3 class="title"><a href="#">Burger Mexicana</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
+                                 
                                 </div>
                             </div><!--//.csi-special-content-->
                         </div><!-- //.CONTAINER -->
@@ -331,10 +257,10 @@
 
                                     <div class="csi-nav-pills-area">
                                         <ul class="nav nav-pills csi-nav-pills">
-                                            <li class="active"><a data-toggle="pill" href="#"><img src="assets/img/tab-menu1.png" alt=""> Speacial</a></li>
-                                            <li><a data-toggle="pill" href="#"><img src="assets/img/tab-menu2.png" alt=""> Breakfast</a></li>
-                                            <li><a data-toggle="pill" href="#"><img src="assets/img/tab-menu3.png" alt=""> Lunch</a></li>
-                                            <li><a data-toggle="pill" href="#"><img src="assets/img/tab-menu4.png" alt=""> Dinner</a></li>
+                                            <li class="active"><a data-toggle="pill" href="#home"><img src="assets/img/tab-menu1.png" alt=""> Speacial</a></li>
+                                            <li><a data-toggle="pill" href="#menu1"><img src="assets/img/tab-menu2.png" alt=""> Breakfast</a></li>
+                                            <li><a data-toggle="pill" href="#menu2"><img src="assets/img/tab-menu3.png" alt=""> Lunch</a></li>
+                                            <li><a data-toggle="pill" href="#menu3"><img src="assets/img/tab-menu4.png" alt=""> Dinner</a></li>
                                         </ul>
                                     </div>
 
@@ -342,12 +268,12 @@
                                         <div id="home" class="tab-pane fade in active">
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item1.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item1.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -360,12 +286,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item2.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item2.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Chocolate Milkshake</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Chocolate Milkshake</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -378,12 +304,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Caesar Salad</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Caesar Salad</a></h3>
                                                             <p class="price">
                                                                 70<span>$</span>
                                                             </p>
@@ -396,12 +322,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Black Bean Burger</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Black Bean Burger</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -414,12 +340,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item5.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item5.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">American Humburger</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">American Humburger</a></h3>
                                                             <p class="price">
                                                                 40<span>$</span>
                                                             </p>
@@ -432,12 +358,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item6.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item6.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Burger Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Burger Mexicana</a></h3>
                                                             <p class="price">
                                                                 40<span>$</span>
                                                             </p>
@@ -450,12 +376,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item1.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item1.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -468,12 +394,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item2.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item2.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -488,12 +414,12 @@
                                         <div id="menu1" class="tab-pane fade">
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -506,12 +432,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -524,12 +450,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item5.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item5.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -542,12 +468,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item6.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item6.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -562,12 +488,12 @@
                                         <div id="menu2" class="tab-pane fade">
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item1.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item1.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -580,12 +506,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item2.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item2.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -600,12 +526,12 @@
                                         <div id="menu3" class="tab-pane fade">
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -618,12 +544,12 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item1.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item1.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="#">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
@@ -636,7 +562,7 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="#"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
