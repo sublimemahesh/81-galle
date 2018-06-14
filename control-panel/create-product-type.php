@@ -37,7 +37,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2>Create Product Types</h2>
+                                <h2>Create Menu Types</h2>
                                 <ul class="header-dropdown">
                                     <li class="">
                                         <a href="manage-product-type.php">
@@ -74,14 +74,14 @@ include_once(dirname(__FILE__) . '/auth.php');
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="hidden">
                                         <label for="description">Description</label>
                                         <div class="form-line">
-                                            <textarea id="description" name="description" class="form-control" rows="5"></textarea> 
+                                            <textarea id="description" name="description" class="form-control" rows="5">abc</textarea> 
                                         </div>
 
                                     </div>
-                                    <div class="col-md-12"> 
+                                    <div class="hidden"> 
                                         <input type="submit" name="create" class="btn btn-primary m-t-15 waves-effect" value="create"/>
                                     </div>
                                 </form>

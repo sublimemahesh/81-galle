@@ -89,13 +89,13 @@ include_once(dirname(__FILE__) . '/auth.php');
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div class="hidden">
                                         <label for="description">Description</label>
                                         <div class="form-line">
-                                            <textarea id="description" name="description" class="form-control" rows="5"></textarea> 
+                                            <textarea id="description" name="description" class="form-control" rows="5">abc</textarea> 
                                         </div>
 
-                                    </div>
+                               </div>
                                     <div class="col-md-12"> 
                                         <input type="submit" name="create" class="btn btn-primary m-t-15 waves-effect" value="create"/>
                                     </div>

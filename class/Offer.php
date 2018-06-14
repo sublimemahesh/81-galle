@@ -17,7 +17,7 @@ class Offer {
     public $title;
     public $image_name;
     public $short_description;
-    public $description;
+//    public $description;
     public $price;
     public $discount;
     public $queue;
@@ -25,7 +25,7 @@ class Offer {
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`title`,`image_name`,`short_description`,`description`,`price`,`discount`,`queue` FROM `offer` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`title`,`image_name`,`short_description`,`price`,`discount`,`queue` FROM `offer` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -35,7 +35,7 @@ class Offer {
             $this->title = $result['title'];
             $this->image_name = $result['image_name'];
             $this->short_description = $result['short_description'];
-            $this->description = $result['description'];
+//            $this->description = $result['description'];
             $this->price = $result['price'];
             $this->discount = $result['discount'];
             $this->queue = $result['queue'];
@@ -46,11 +46,11 @@ class Offer {
 
     public function create() {
 
-        $query = "INSERT INTO `offer` (`title`,`image_name`,`short_description`,`description`,`price`,`discount`,`queue`) VALUES  ('"
+        $query = "INSERT INTO `offer` (`title`,`image_name`,`short_description`,`price`,`discount`,`queue`) VALUES  ('"
                 . $this->title . "','"
                 . $this->image_name . "', '"
                 . $this->short_description . "', '"
-                . $this->description . "', '"
+//                . $this->description . "', '"
                 . $this->price . "', '"
                 . $this->discount . "', '"
                 . $this->queue . "')";
@@ -88,7 +88,7 @@ class Offer {
                 . "`title` ='" . $this->title . "', "
                 . "`image_name` ='" . $this->image_name . "', "
                 . "`short_description` ='" . $this->short_description . "', "
-                . "`description` ='" . $this->description . "', "
+//                . "`description` ='" . $this->description . "', "
                 . "`price` ='" . $this->price . "', "
                 . "`discount` ='" . $this->discount . "', "
                 . "`queue` ='" . $this->queue . "' "
