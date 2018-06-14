@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="footer-top">
-                                <a class="footer-logo" href="index.html"><img src="assets/img/logo.png" alt="logo"/></a>
+                                <a class="footer-logo" href="index.php"><img src="assets/img/logo.png" alt="logo"/></a>
                             </div>
                         </div>
                     </div>
