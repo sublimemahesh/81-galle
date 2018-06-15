@@ -101,12 +101,12 @@ $OFFER = new Offer($id);
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<!--                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <label for="description">Description</label>
                                         <div class="form-line">
                                             <textarea id="description" name="description" class="form-control" rows="5"><?php echo $OFFER->description; ?></textarea> 
                                         </div>
-                                    </div>
+                                    </div>-->
                                     <div class="col-md-12">
                                         <input type="hidden" id="oldImageName" value="<?php echo $OFFER->image_name; ?>" name="oldImageName"/>
                                         <input type="hidden" id="id" value="<?php echo $OFFER->id; ?>" name="id"/>

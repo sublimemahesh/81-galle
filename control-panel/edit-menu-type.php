@@ -1,13 +1,20 @@
 <?php
 include_once(dirname(__FILE__) . '/../class/include.php');
 include_once(dirname(__FILE__) . '/auth.php');
-?>
+
+$id = '';
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+$MENU_TYPE = new MenuType($id);
+?> 
+
 <!DOCTYPE html>
 <html> 
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Offer</title>
+        <title>Menu</title>
         <!-- Favicon-->
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -29,6 +36,7 @@ include_once(dirname(__FILE__) . '/auth.php');
             <div class="container-fluid">  
                 <?php
                 $vali = new Validator();
+
                 $vali->show_message();
                 ?>
                 <!-- Vertical Layout -->
@@ -36,80 +44,40 @@ include_once(dirname(__FILE__) . '/auth.php');
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2>Create Offer</h2>
+                                <h2>
+                                    Edit Menu Type
+                                </h2>
                                 <ul class="header-dropdown">
                                     <li class="">
-                                        <a href="manage-offer.php">
+                                        <a href="manage-menu-type.php">
                                             <i class="material-icons">list</i> 
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="body">
-                                <form class="form-horizontal"  method="post" action="post-and-get/offer.php" enctype="multipart/form-data"> 
-
+                                <form class="form-horizontal" method="post" action="post-and-get/menu-type.php" enctype="multipart/form-data"> 
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" id="title" class="form-control"  autocomplete="off" name="title" required="true">
+                                                <input type="text" id="name" class="form-control"  value="<?php echo $MENU_TYPE->name; ?>"  name="name"  required="TRUE">
                                                 <label class="form-label">Title</label>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="text" id="price" class="form-control" autocomplete="off" name="price" required="true">
-                                                <label class="form-label">Price</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="text" id="discount" class="form-control" autocomplete="off" name="discount" required="true">
-                                                <label class="form-label">Discount</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">                                       
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="file" id="image" class="form-control" name="image"  required="true">
-                                            </div>
-                                        </div>
-                                    </div>
 
                                     <div class="col-md-12">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="text" id="short_description" class="form-control" autocomplete="off" name="short_description" required="true">
-                                                <label class="form-label">Short Description</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                 <div class="hidden">
-                                        <label for="description">Description</label>
-                                        <div class="form-line">
-                                            <textarea id="description" name="description" class="form-control" rows="5">abc</textarea> 
-                                        </div>
-
-                               </div>
-                                    <div class="col-md-12"> 
-                                        <input type="submit" name="create" class="btn btn-primary m-t-15 waves-effect" value="create"/>
+                                        <input type="hidden" id="id" value="<?php echo $MENU_TYPE->id; ?>" name="id"/>
+<!--                                            <input type="hidden" id="authToken" value="<?php echo $_SESSION["authToken"]; ?>" name="authToken"/>-->
+                                        <button type="submit" class="btn btn-primary m-t-15 waves-effect" name="update" value="update">Save Changes</button>
                                     </div>
                                     <div class="row clearfix">  </div>
-                                    <hr/>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
                 <!-- #END# Vertical Layout -->
-
             </div>
         </section>
 

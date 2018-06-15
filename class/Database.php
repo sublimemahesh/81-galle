@@ -11,15 +11,15 @@
 class Database {
 
     
-    private $host = 'kelum818.ipagemysql.com';
-    private $name = 'masalagewatta';
-    private $user = 'masalagewatta';
-    private $password = 'Masal@903430';
+//    private $host = 'kelum818.ipagemysql.com';
+//    private $name = 'masalagewatta';
+//    private $user = 'masalagewatta';
+//    private $password = 'Masal@903430';
      
-//    private $host = 'localhost';
-//    private $name = 'new_admin';
-//    private $user = 'root';
-//    private $password = '';
+    private $host = 'localhost';
+    private $name = '81_galle';
+    private $user = 'root';
+    private $password = '';
 
     public function __construct() {
         mysql_connect($this->host, $this->user, $this->password) or die("Invalid host  or user details");
