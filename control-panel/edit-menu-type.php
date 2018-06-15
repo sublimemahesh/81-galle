@@ -6,7 +6,7 @@ $id = '';
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
-$PRODUCT_TYPE = new ProductType($id);
+$MENU_TYPE = new MenuType($id);
 ?> 
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ $PRODUCT_TYPE = new ProductType($id);
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Products</title>
+        <title>Menu</title>
         <!-- Favicon-->
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -45,53 +45,29 @@ $PRODUCT_TYPE = new ProductType($id);
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Edit Product Type
+                                    Edit Menu Type
                                 </h2>
                                 <ul class="header-dropdown">
                                     <li class="">
-                                        <a href="manage-product-type.php">
+                                        <a href="manage-menu-type.php">
                                             <i class="material-icons">list</i> 
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="body">
-                                <form class="form-horizontal" method="post" action="post-and-get/product-type.php" enctype="multipart/form-data"> 
+                                <form class="form-horizontal" method="post" action="post-and-get/menu-type.php" enctype="multipart/form-data"> 
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" id="name" class="form-control"  value="<?php echo $PRODUCT_TYPE->name; ?>"  name="name"  required="TRUE">
+                                                <input type="text" id="name" class="form-control"  value="<?php echo $MENU_TYPE->name; ?>"  name="name"  required="TRUE">
                                                 <label class="form-label">Title</label>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">                                       
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="file" id="image" class="form-control" value="<?php echo $PRODUCT_TYPE->image_name; ?>"  name="image">
-                                                <img src="../upload/product-type/<?php echo $PRODUCT_TYPE->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
-                                            </div>
-                                        </div>
-                                    </div>
 
-
-                                    <div class="col-sm-12">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="text" id="short_description" class="form-control" value="<?php echo $PRODUCT_TYPE->short_description; ?>"  name="short_description">
-                                                <label class="form-label">Short Description</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <label for="description">Description</label>
-                                        <div class="form-line">
-                                            <textarea id="description" name="description" class="form-control" rows="5"><?php echo $PRODUCT_TYPE->description; ?></textarea> 
-                                        </div>
-                                    </div>
                                     <div class="col-md-12">
-                                        <input type="hidden" id="oldImageName" value="<?php echo $PRODUCT_TYPE->image_name; ?>" name="oldImageName"/>
-                                        <input type="hidden" id="id" value="<?php echo $PRODUCT_TYPE->id; ?>" name="id"/>
+                                        <input type="hidden" id="id" value="<?php echo $MENU_TYPE->id; ?>" name="id"/>
 <!--                                            <input type="hidden" id="authToken" value="<?php echo $_SESSION["authToken"]; ?>" name="authToken"/>-->
                                         <button type="submit" class="btn btn-primary m-t-15 waves-effect" name="update" value="update">Save Changes</button>
                                     </div>

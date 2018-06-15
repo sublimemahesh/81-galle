@@ -507,14 +507,14 @@
                     </a>
                     <ul class="ml-menu">
                         <li>
-                            <a href="create-product-type.php">
+                            <a href="create-menu-type.php">
                                 <i class="material-icons">add</i>
                                 <span>Add New</span>
                             </a>
                             
                         </li>
                         <li>
-                            <a href="manage-product-type.php">
+                            <a href="manage-menu-type.php">
                                 <i class="material-icons">list</i>
                                 <span>Manage</span>
                             </a>

@@ -27,7 +27,7 @@ include_once(dirname(__FILE__) . '/Slider.php');
 include_once(dirname(__FILE__) . '/Page.php');
 include_once(dirname(__FILE__) . '/Banner.php');
 include_once(dirname(__FILE__) . '/Product.php');
-include_once(dirname(__FILE__) . '/ProductType.php');
+include_once(dirname(__FILE__) . '/MenuType.php');
 //include_once(dirname(__FILE__) . '/TourPackagePhotosNormal.php');
 
 function dd($data) {

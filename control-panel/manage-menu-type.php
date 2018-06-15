@@ -2,7 +2,7 @@
 include_once(dirname(__FILE__) . '/../class/include.php');
 include_once(dirname(__FILE__) . '/auth.php');
 
-$PRODUCT_TYPE = new ProductType(NULL);
+$MENU_TYPE = new MenuType(NULL);
 ?>
 ﻿<!DOCTYPE html>
 <html>
@@ -21,7 +21,6 @@ $PRODUCT_TYPE = new ProductType(NULL);
         <link href="css/style.css" rel="stylesheet">
         <link href="css/themes/all-themes.css" rel="stylesheet" />
     </head>
-
     <body class="theme-red">
         <?php
         include './navigation-and-header.php';
@@ -34,11 +33,11 @@ $PRODUCT_TYPE = new ProductType(NULL);
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Manage Product Types
+                                    Manage Menu Types
                                 </h2>
                                 <ul class="header-dropdown">
                                     <li>
-                                        <a href="create-product-type.php">
+                                        <a href="create-menu-type.php">
                                             <i class="material-icons">add</i> 
                                         </a>
                                     </li>
@@ -47,33 +46,40 @@ $PRODUCT_TYPE = new ProductType(NULL);
                             <div class="body">
                                 <!--                                <div class="table-responsive">-->
                                 <div>
-                                    <div class="row clearfix">
-                                        <?php
-                                        $PRODUCT_TYPE = ProductType::all();
-                                        if (count($PRODUCT_TYPE) > 0) {
-                                            foreach ($PRODUCT_TYPE as $key => $product) {
-                                                ?>
-                                                <div class="col-md-3"  id="div<?php echo $product['id']; ?>">
-                                                    <div class="photo-img-container">
-                                                        <img src="../upload/product-type/<?php echo $product['image_name']; ?>" class="img-responsive ">
-                                                    </div>
-                                                    <div class="img-caption">
-                                                        <p class="maxlinetitle"><?php echo $product['name']; ?></p>
-                                                        <div class="d">
-                                                            <a href="#"  class="delete-product-type" data-id="<?php echo $product['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
-                                                            <a href="edit-product-type.php?id=<?php echo $product['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
-                                                            <a href="arrange-products.php?id=<?php echo $product['id']; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
-                                                            <a href="view-products.php?id=<?php echo $product['id']; ?>">  <button class="glyphicon glyphicon-picture arrange-btn"></button></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                    <div>
+                                        <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Name</th>  
+                                                </tr>
+                                            </thead>
+                                            <tfoot>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Name</th>    
+                                                </tr>
+                                            </tfoot>
+                                            <tbody>
                                                 <?php
-                                            }
-                                        } else {
-                                            ?> 
-                                            <b style="padding-left: 15px;">No Products in the database.</b> 
-                                        <?php } ?> 
-
+                                                $MENU_TYPE = new MenuType(NULL);
+                                                foreach ($MENU_TYPE->all() as $key => $menu) {
+                                                    ?>
+                                                    <tr id="row_<?php echo $menu['id']; ?>">
+                                                        <td><?php echo $menu['id']; ?></td> 
+                                                        <td><?php echo $menu['name']; ?></td> 
+                                                        <td> 
+                                                            <a href="edit-menu-type.php?id=<?php echo $menu['id']; ?>" class="op-link btn btn-sm btn-default"><i class="glyphicon glyphicon-pencil"></i></a>  |  
+                                                            <a href="#" class="delete-pages btn btn-sm btn-danger" data-id="<?php echo $menu['id']; ?>">
+                                                                <i class="waves-effect glyphicon glyphicon-trash" data-type="cancel"></i>
+                                                            </a> |   
+                                                        </td>
+                                                    </tr>
+                                                    <?php
+                                                }
+                                                ?>   
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                                 <!--                                </div>-->
@@ -82,10 +88,8 @@ $PRODUCT_TYPE = new ProductType(NULL);
                     </div>
                 </div>
                 <!-- #END# Manage brand -->
-
             </div>
         </section>
-
         <script src="plugins/jquery/jquery.min.js"></script>
         <script src="plugins/bootstrap/js/bootstrap.js"></script>
         <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
@@ -103,7 +107,6 @@ $PRODUCT_TYPE = new ProductType(NULL);
         <script src="js/admin.js"></script>
         <script src="js/pages/tables/jquery-datatable.js"></script>
         <script src="js/demo.js"></script>
-
         <script src="plugins/sweetalert/sweetalert.min.js"></script>
         <script src="plugins/bootstrap-notify/bootstrap-notify.js"></script>
         <script src="js/pages/ui/dialogs.js"></script>
