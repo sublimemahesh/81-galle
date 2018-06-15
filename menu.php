@@ -120,243 +120,63 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div id="csi-special" class="csi-special csi-special-inner">
-                    <div class="csi-inner">
-                        <div class="container">
-                            <div class="csi-special-content">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="view-menu.php"><img src="assets/img/speacial-item/special-item1.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="view-menu.php">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">Mexican Food</h4>
-                                                    <h3 class="title"><a href="single-item.html">Burger Mexicana</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="#"><img src="assets/img/speacial-item/special-item2.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="single-item.html">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">Italian Food</h4>
-                                                    <h3 class="title"><a href="single-item.html">Chocolate Milkshake</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="#"><img src="assets/img/speacial-item/special-item3.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="single-item.html">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">Mexican Food</h4>
-                                                    <h3 class="title"><a href="single-item.html">Black Bean Burger</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="#"><img src="assets/img/speacial-item/special-item4.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="single-item.html">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">Indian Food</h4>
-                                                    <h3 class="title"><a href="single-item.html">Lagrotas Nanos</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="#"><img src="assets/img/speacial-item/special-item5.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="single-item.html">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">American Food</h4>
-                                                    <h3 class="title"><a href="single-item.html">American Humburger</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="#"><img src="assets/img/speacial-item/special-item6.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="single-item.html">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">Mexican Food</h4>
-                                                    <h3 class="title"><a href="single-item.html">Burger Mexicana</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="#"><img src="assets/img/speacial-item/special-item4.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="single-item.html">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">Indian Food</h4>
-                                                    <h3 class="title"><a href="single-item.html">Lagrotas Nanos</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="#"><img src="assets/img/speacial-item/special-item5.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="single-item.html">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">American Food</h4>
-                                                    <h3 class="title"><a href="single-item.html">American Humburger</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-4">
-                                        <div class="csi-special-single">
-                                            <figure>
-                                                <a href="#"><img src="assets/img/speacial-item/special-item4.jpg" alt="Special Food"></a>
-                                                <figcaption>
-                                                    <div class="csi-hover-link">
-                                                        <div class="csi-vertical">
-                                                            <a href="single-item.html">
-                                                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="single-info">
-                                                <div class="price-area">
-                                                    <h3 class="price">558 <span>$</span></h3>
-                                                </div>
-                                                <div class="speacial-info">
-                                                    <h4 class="subtitle">Indian Food</h4>
-                                                    <h3 class="title"><a href="single-item.html">Lagrotas Nanos</a></h3>
-                                                </div>
-                                            </div>
-                                        </div><!--//.csi-special-single-->
-                                    </div>
+         <section>
+        <div id="csi-news" class="csi-news">
+            <div class="csi-inner">
+                <div class="container">
+                    <div class="news-area">
+                        <div class="row">
+                      
+                            <div class="col-sm-6 col-md-3">
+                                <div class="single-news">
+                                    <figure>
+                                        <a href="view-menu.php"><img src="assets/img/speacial-item/special-item1.jpg" alt="news"/></a>
+                                          <figcaption>
+                                            <h4 class="date">Special</h4>
+                                        </figcaption>
+                                    </figure>
                                 </div>
-                            </div><!--//.csi-special-content-->
-                        </div><!-- //.CONTAINER -->
-                    </div><!-- //.INNER -->
-                </div>
-            </section>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="single-news">
+                                    <figure>
+                                        <a href="view-menu.php"><img src="assets/img/speacial-item/special-item2.jpg" alt="news"/></a>
+                                          <figcaption>
+                                            <h4 class="date">Breakfast</h4>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="single-news">
+                                    <figure>
+                                        <a href="view-menu.php"><img src="assets/img/speacial-item/special-item3.jpg" alt="news"/></a>
+                                        <figcaption>
+                                               <h4 class="date">Lunch</h4>
+                                        </figcaption>
+                                    </figure>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="single-news">
+                                    <figure>
+                                        <a href="view-menu.php"><img src="assets/img/speacial-item/special-item4.jpg" alt="news"/></a>
+                                        <figcaption>
+                                             <h4 class="date">Dinner</h4>
+                                        </figcaption>
+                                    </figure>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    
+                </div><!-- //.CONTAINER -->
+            </div><!-- //.INNER -->
+        </div>
+    </section>
 
 
 

@@ -54,26 +54,105 @@
             include './header.php';
             ?>
 
-            <section>
-                <div class="csi-banner">
-                    <div class="csi-banner-style">
-                        <div class="csi-inner">
-                            <div class="container">
-                                <div class="csi-banner-content">
-                                    <h3 class="csi-subtitle">Hot & Spicy</h3>
-                                    <h2 class="csi-title">Only ourselves</h2>
-                                    <div class="btn-area">
-                                        <a class="csi-btn" href="#">Book A Table</a>
-                                        <a class="csi-btn csi-btn-white" href="#">Our Menu</a>
-                                    </div>
+        <section>
+        <div class="csi-slider">
+            <div class="csi-banner-style">
+                <div class="csi-inner">
+
+                    <div id="csi-main-slider" class="owl-carousel ">
+
+                        <!--SLIDER ITEM 1-->
+
+                        <div class="csi-item-common csi-item-left">
+
+                            <div class="col-sm-12g">
+                                <div class="slider-text-single">
+                                    <figure>
+                                        <img src="assets/img/slider1.jpg" alt="slider"/>
+                                        <figcaption>
+                                            <div class="figcaption-inner">
+                                                <div class="csi-container csi-banner-content">
+                                                    <div class="csi-hover-link">
+                                                        <div class="csi-vertical">
+                                                            <h3 class="csi-subtitle csi-zoomIn-one">Hot & Spicy</h3>
+                                                            <h2 class="csi-title csi-zoomIn-two">Delicious Food</h2>
+                                                            <div class="btn-area csi-zoomIn-three">
+                                                                <a class="csi-btn" href="#csi-reservation">Book A Table</a>
+                                                                <a class="csi-btn csi-btn-white" href="#csi-menu">Our Menu</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
                                 </div>
-                            </div>
-                            <!-- //.container -->
+                            </div> <!--//.col-->
                         </div>
-                        <!-- //.INNER -->
-                    </div>
+                        <!--SLIDER ITEM 1 End-->
+
+                        <!--SLIDER ITEM 2-->
+                        <div class="csi-item-common csi-item-center">
+                            <div class="col-sm-12g">
+                                <div class="slider-text-single">
+                                    <figure>
+                                        <img src="assets/img/slider2.jpg" alt="slider"/>
+                                        <figcaption>
+                                            <div class="figcaption-inner">
+                                                <div class="csi-container csi-banner-content">
+                                                    <div class="csi-hover-link">
+                                                        <div class="csi-vertical">
+                                                            <h3 class="csi-subtitle csi-zoomIn-one">Hot & Testy</h3>
+                                                            <h2 class="csi-title csi-zoomIn-two">Different Food</h2>
+                                                            <div class="btn-area csi-zoomIn-three">
+                                                                <a class="csi-btn" href="#csi-reservation">Book A Table</a>
+                                                                <a class="csi-btn csi-btn-white" href="#csi-menu">Our Menu</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div> <!--//.col-->
+                        </div>
+                        <!--SLIDER ITEM 2 End-->
+
+                        <!--SLIDER ITEM 3-->
+                        <div class="csi-item-common csi-item-right">
+                            <div class="col-sm-12g">
+                                <div class="slider-text-single">
+                                    <figure>
+                                        <img src="assets/img/slider4.jpg" alt="slider"/>
+                                        <figcaption>
+                                            <div class="figcaption-inner">
+                                                <div class="csi-container csi-banner-content">
+                                                    <div class="csi-hover-link">
+                                                        <div class="csi-vertical">
+                                                            <h3 class="csi-subtitle csi-zoomIn-one">Spicy & Testy</h3>
+                                                            <h2 class="csi-title csi-zoomIn-two">American Chicken</h2>
+                                                            <div class="btn-area csi-zoomIn-three">
+                                                                <a class="csi-btn" href="#csi-reservation">Book A Table</a>
+                                                                <a class="csi-btn csi-btn-white" href="#csi-menu">Our Menu</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div> <!--//.col-->
+                        </div>
+                        <!--SLIDER ITEM 3 End-->
+                    </div> <!--//.csi-main-slider-->
+                    <!-- //.CONTAINER -->
                 </div>
-            </section>
+                <!-- //.INNER -->
+            </div>
+        </div>
+    </section>
             <!--Banner END-->
 
 

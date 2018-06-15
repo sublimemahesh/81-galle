@@ -15,11 +15,11 @@
                         <div class="col-sm-6">
                             <div class="right-menu">
                                 <ul class="list-inline">
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" style="width: 36px;height: 36px;"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" style="width: 36px;height: 36px;"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" style="width: 36px;height: 36px;"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" style="width: 36px;height: 36px;"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" style="width: 36px;height: 36px;"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                         </div>

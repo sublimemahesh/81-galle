@@ -871,7 +871,7 @@ blockquote:before{
     -moz-background-size:cover;
     background-size:cover;
     color:#fff
-   
+
 }
 .csi-banner .csi-inner{
     padding:28rem 0
@@ -2086,8 +2086,8 @@ blockquote:before{
     bottom:1.6rem;
     left:1.6rem;
     border-radius:4px;
-    width:60px;
-    height:60px;
+    width: 113px;
+    height: 33px;
     transition-duration:.5s
 }
 .csi-news .single-news figure figcaption .date{
@@ -2758,9 +2758,7 @@ blockquote:before{
 .page .csi-banner-inner .csi-inner,.page-template .csi-banner-inner .csi-inner,.single .csi-banner-inner .csi-inner,.single-post .csi-banner-inner .csi-inner{
     padding:0
 }
-.page .csi-news .single-news,.page-template .csi-news .single-news,.single .csi-news .single-news,.single-post .csi-news .single-news{
-    min-height:468px
-}
+
 .page .csi-heading-area,.page-template .csi-heading-area,.single .csi-heading-area,.single-post .csi-heading-area{
     text-align:center
 }
