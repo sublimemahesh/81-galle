@@ -4,15 +4,15 @@ include_once(dirname(__FILE__) . '/../../class/include.php');
 
 if (isset($_POST['create'])) {
 
-    $PRODUCT = new Product(NULL);
+    $MENU = new Menu(NULL);
     $VALID = new Validator();
 
-    $PRODUCT->type = $_POST['id'];
-    $PRODUCT->name = mysql_real_escape_string($_POST['name']);
-    $PRODUCT->short_description = mysql_real_escape_string($_POST['short_description']);
-    $PRODUCT->description = mysql_real_escape_string($_POST['description']);
+    $MENU->type = $_POST['id'];
+    $MENU->name = mysql_real_escape_string($_POST['name']);
+    $MENU->image_name = mysql_real_escape_string($_POST['image_name']);
+    $MENU->description = mysql_real_escape_string($_POST['description']);
 
-    $dir_dest = '../../upload/product-type/product/';
+    $dir_dest = '../../upload/menu-type/menu/';
 
     $handle = new Upload($_FILES['image']);
 
@@ -34,18 +34,18 @@ if (isset($_POST['create'])) {
         }
     }
 
-    $PRODUCT->image_name = $imgName;
+    $MENU->image_name = $imgName;
 
-    $VALID->check($PRODUCT, [
-
+    $VALID->check($MENU, [
+        'type' => ['required' => TRUE],
         'name' => ['required' => TRUE],
-        'short_description' => ['required' => TRUE],
+        'image_name' => ['required' => TRUE],
         'description' => ['required' => TRUE],
-        'image_name' => ['required' => TRUE]
+        'price' => ['required' => TRUE]
     ]);
 
     if ($VALID->passed()) {
-        $PRODUCT->create();
+        $MENU->create();
 
         if (!isset($_SESSION)) {
             session_start();
@@ -67,7 +67,7 @@ if (isset($_POST['create'])) {
 }
 
 if (isset($_POST['update'])) {
-    $dir_dest = '../../upload/product-type/product/';
+    $dir_dest = '../../upload/menu-type/menu/';
 
     $handle = new Upload($_FILES['image']);
 
@@ -91,24 +91,24 @@ if (isset($_POST['update'])) {
         }
     }
 
-    $PRODUCT = new Product($_POST['id']);
+    $MENU = new Product($_POST['id']);
 
-    $PRODUCT->image_name = $_POST['oldImageName'];
-    $PRODUCT->name = mysql_real_escape_string($_POST['name']);
-    $PRODUCT->short_description = mysql_real_escape_string($_POST['short_description']);
-    $PRODUCT->description = mysql_real_escape_string($_POST['description']);
+    $MENU->image_name = $_POST['oldImageName'];
+    $MENU->name = mysql_real_escape_string($_POST['name']);
+    $MENU->short_description = mysql_real_escape_string($_POST['short_description']);
+    $MENU->description = mysql_real_escape_string($_POST['description']);
 
     $VALID = new Validator();
-    $VALID->check($PRODUCT, [
-
+    $VALID->check($MENU, [
         'name' => ['required' => TRUE],
-        'short_description' => ['required' => TRUE],
+        'type' => ['required' => TRUE],
+        'image_name' => ['required' => TRUE],
         'description' => ['required' => TRUE],
-        'image_name' => ['required' => TRUE]
+        'price' => ['required' => TRUE]
     ]);
 
     if ($VALID->passed()) {
-        $PRODUCT->update();
+        $MENU->update();
 
         if (!isset($_SESSION)) {
             session_start();
@@ -134,7 +134,7 @@ if (isset($_POST['save-data'])) {
     foreach ($_POST['sort'] as $key => $img) {
         $key = $key + 1;
 
-        $PRODUCT = Product::arrange($key, $img);
+        $MENU = Menu::arrange($key, $img);
 
         header('Location: ' . $_SERVER['HTTP_REFERER']);
     }

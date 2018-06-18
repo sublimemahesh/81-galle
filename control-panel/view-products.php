@@ -5,7 +5,7 @@ $id = '';
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
-$PRODUCT_TYPE = new ProductType($id);
+$MENU_TYPE = new MenuType($id);
 ?> 
 <!DOCTYPE html>
 
@@ -47,7 +47,7 @@ $PRODUCT_TYPE = new ProductType($id);
                                 <h2>Create Products</h2>
                                 <ul class="header-dropdown">
                                     <li class="">
-                                        <a href="manage-product-type.php">
+                                        <a href="manage-menu-type.php">
                                             <i class="material-icons">list</i> 
                                         </a>
                                     </li>

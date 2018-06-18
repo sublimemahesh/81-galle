@@ -6,20 +6,16 @@
  * and open the template in the editor.
  */
 
-/**
- * Description of ProductType
- *
- * @author Nipuni
- */
 class MenuType {
 
     public $id;
     public $name;
-    
+    public $image_name;
+
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`name` FROM `menu_type` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`name`,`image_name` FROM `menu_type` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -27,16 +23,18 @@ class MenuType {
 
             $this->id = $result['id'];
             $this->name = $result['name'];
-         
+            $this->image_name = $result['image_name'];
+
+
             return $this;
         }
     }
 
     public function create() {
 
-        $query = "INSERT INTO `menu_type` (`name`) VALUES  ('"
-          
-                . $this->name . "')";
+        $query = "INSERT INTO `menu_type` (`name`,`image_name`) VALUES  ('"
+                . $this->name . "','"
+                . $this->image_name . "')";
 
         $db = new Database();
 
@@ -69,6 +67,7 @@ class MenuType {
 
         $query = "UPDATE  `menu_type` SET "
                 . "`name` ='" . $this->name . "', "
+                . "`image_name` ='" . $this->image_name . "' "
                 . "WHERE `id` = '" . $this->id . "'";
 
         $db = new Database();
@@ -84,6 +83,10 @@ class MenuType {
 
     public function delete() {
 
+        $this->deletePhotos();
+
+        unlink(Helper::getSitePath() . "upload/menu-type/" . $this->image_name);
+
         $query = 'DELETE FROM `menu_type` WHERE id="' . $this->id . '"';
 
         $db = new Database();
@@ -91,6 +94,20 @@ class MenuType {
         return $db->readQuery($query);
     }
 
-   
+    public function deletePhotos() {
+
+        $MENU = new Menu(NULL);
+
+        $allPhotos = $MENU->getMenusById($this->id);
+
+        foreach ($allPhotos as $photo) {
+
+            $IMG = $MENU->image_name = $photo["image_name"];
+            unlink(Helper::getSitePath() . "upload/menu-type/menu/" . $IMG);
+
+            $MENU->id = $photo["id"];
+            $MENU->delete();
+        }
+    }
 
 }

@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $('.delete-menu-type').click(function () {
 
+    $('.delete-menu-type').click(function () {    
         var id = $(this).attr("data-id");
 
         swal({

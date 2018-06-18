@@ -7,7 +7,7 @@ include_once(dirname(__FILE__) . '/auth.php');
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Menu</title>
+        <title>Products</title>
         <!-- Favicon-->
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -53,6 +53,14 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             <div class="form-line">
                                                 <input type="text" id="name" class="form-control"  autocomplete="off" name="name" required="true">
                                                 <label class="form-label">Title</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">                                       
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <input type="file" id="image" class="form-control" name="image_name"  required="true">
                                             </div>
                                         </div>
                                     </div>

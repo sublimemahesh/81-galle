@@ -11,20 +11,19 @@
  *
  * @author Nipuni
  */
-class Product {
+class Menu {
 
     public $id;
     public $type;
     public $name;
     public $image_name;
-    public $short_description;
     public $description;
-    public $queue;
+    public $price;
 
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`type`,`name`,`image_name`,`short_description`,`description`,`queue` FROM `product` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`type`,`name`,`image_name`,`description`,`price` FROM `menu` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -34,9 +33,8 @@ class Product {
             $this->type = $result['type'];
             $this->name = $result['name'];
             $this->image_name = $result['image_name'];
-            $this->short_description = $result['short_description'];
             $this->description = $result['description'];
-            $this->queue = $result['queue'];
+            $this->price = $result['price'];
 
             return $this;
         }
@@ -44,13 +42,12 @@ class Product {
 
     public function create() {
 
-        $query = "INSERT INTO `product` (`type`,`name`,`image_name`,`short_description`,`description`,`queue`) VALUES  ('"
+        $query = "INSERT INTO `menu` (`type`,`name`,`image_name`,`description`,`price`) VALUES  ('"
                 . $this->type . "','"
                 . $this->name . "','"
                 . $this->image_name . "', '"
-                . $this->short_description . "', '"
                 . $this->description . "', '"
-                . $this->queue . "')";
+                . $this->price . "')";
 
         $db = new Database();
 
@@ -67,7 +64,7 @@ class Product {
 
     public function all() {
 
-        $query = "SELECT * FROM `product` ORDER BY queue ASC";
+        $query = "SELECT * FROM `menu` ORDER BY queue ASC";
         $db = new Database();
         $result = $db->readQuery($query);
         $array_res = array();
@@ -81,13 +78,12 @@ class Product {
 
     public function update() {
 
-        $query = "UPDATE  `product` SET "
+        $query = "UPDATE  `menu` SET "
                 . "`type` ='" . $this->type . "', "
                 . "`name` ='" . $this->name . "', "
                 . "`image_name` ='" . $this->image_name . "', "
-                . "`short_description` ='" . $this->short_description . "', "
                 . "`description` ='" . $this->description . "', "
-                . "`queue` ='" . $this->queue . "' "
+                . "`price` ='" . $this->price . "' "
                 . "WHERE `id` = '" . $this->id . "'";
 
         $db = new Database();
@@ -104,16 +100,16 @@ class Product {
     public function delete() {
 
 
-        $query = 'DELETE FROM `product` WHERE id="' . $this->id . '"';
+        $query = 'DELETE FROM `menu` WHERE id="' . $this->id . '"';
 
         $db = new Database();
 
         return $db->readQuery($query);
     }
 
-    public function getProductsById($product) {
+    public function getMenusById($menu) {
 
-        $query = "SELECT * FROM `product` WHERE `type`= $product  ORDER BY queue ASC";
+        $query = "SELECT * FROM `menu` WHERE `type`= $menu";
 
         $db = new Database();
 
@@ -127,7 +123,7 @@ class Product {
     }
 
     public function arrange($key, $img) {
-        $query = "UPDATE `product` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
+        $query = "UPDATE `menu` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
         $db = new Database();
         $result = $db->readQuery($query);
         return $result;

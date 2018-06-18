@@ -471,7 +471,7 @@
                                                     </div> <!--//.single tab-->
                                                 </div>
                                             </div><!--//.csi-single-tab-->
-                                            <div class="csi-single-tab">
+                                            <div class="csi-single-tab" style="margin-top: -188px;">
                                                 <div class="menu-thumb">
                                                     <a href="single-item.html"><img src="assets/img/speacial-item/special-item2.jpg" alt=""></a>
                                                 </div>
