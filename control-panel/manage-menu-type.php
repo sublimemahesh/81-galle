@@ -90,10 +90,10 @@ $MENU_TYPE = new MenuType(NULL);
                 <!-- #END# Manage brand -->
             </div>
         </section>
-       
+
         <script src="plugins/jquery/jquery.min.js"></script>
         <script src="plugins/bootstrap/js/bootstrap.js"></script>
-                 <script src="delete/js/menu-type.js" type="text/javascript"></script>
+        <script src="delete/js/menu-type.js" type="text/javascript"></script>
         <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
         <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
         <script src="plugins/node-waves/waves.js"></script>
@@ -114,7 +114,7 @@ $MENU_TYPE = new MenuType(NULL);
         <script src="js/pages/ui/dialogs.js"></script>
         <script src="js/demo.js"></script>
 
-      
+
     </body>
 
 </html> 

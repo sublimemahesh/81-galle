@@ -7,14 +7,14 @@ if (isset($_POST['create'])) {
     $MENU = new Menu(NULL);
     $VALID = new Validator();
 
-    $MENU->type = $_POST['id'];
+    $MENU->type = mysql_real_escape_string($_POST['type']);
     $MENU->name = mysql_real_escape_string($_POST['name']);
-    $MENU->image_name = mysql_real_escape_string($_POST['image_name']);
+    $MENU->price = mysql_real_escape_string($_POST['price']);
     $MENU->description = mysql_real_escape_string($_POST['description']);
 
-    $dir_dest = '../../upload/menu-type/menu/';
+    $dir_dest = '../../upload/menu/';
 
-    $handle = new Upload($_FILES['image']);
+    $handle = new Upload($_FILES['image_name']);
 
     $imgName = null;
 
@@ -23,8 +23,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = Helper::randamId();
-        $handle->image_x = 372;
-        $handle->image_y = 277;
+        $handle->image_x = 900;
+        $handle->image_y = 500;
 
         $handle->Process($dir_dest);
 
@@ -41,7 +41,7 @@ if (isset($_POST['create'])) {
         'name' => ['required' => TRUE],
         'image_name' => ['required' => TRUE],
         'description' => ['required' => TRUE],
-        'price' => ['required' => TRUE]
+        'price' => ['required' => TRUE],
     ]);
 
     if ($VALID->passed()) {
@@ -52,8 +52,7 @@ if (isset($_POST['create'])) {
         }
         $VALID->addError("Your data was saved successfully", 'success');
         $_SESSION['ERRORS'] = $VALID->errors();
-
-        header('Location: ' . $_SERVER['HTTP_REFERER']);
+        header("location: ../view-menu.php?id=" . $MENU->id);
     } else {
 
         if (!isset($_SESSION)) {
@@ -67,9 +66,9 @@ if (isset($_POST['create'])) {
 }
 
 if (isset($_POST['update'])) {
-    $dir_dest = '../../upload/menu-type/menu/';
+    $dir_dest = '../../upload/menu/';
 
-    $handle = new Upload($_FILES['image']);
+    $handle = new Upload($_FILES['image_name']);
 
     $imgName = null;
 
@@ -80,8 +79,8 @@ if (isset($_POST['update'])) {
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $_POST ["oldImageName"];
-        $handle->image_x = 372;
-        $handle->image_y = 277;
+        $handle->image_x = 900;
+        $handle->image_y = 500;
 
         $handle->Process($dir_dest);
 
@@ -90,21 +89,25 @@ if (isset($_POST['update'])) {
             $imgName = $handle->file_dst_name;
         }
     }
+    $MENU = new Menu(NULL);
 
-    $MENU = new Product($_POST['id']);
-
+    $MENU->id = $_POST['id'];
+    $MENU->type = $_POST['type'];
     $MENU->image_name = $_POST['oldImageName'];
     $MENU->name = mysql_real_escape_string($_POST['name']);
-    $MENU->short_description = mysql_real_escape_string($_POST['short_description']);
+    $MENU->price = mysql_real_escape_string($_POST['price']);
     $MENU->description = mysql_real_escape_string($_POST['description']);
+
+
 
     $VALID = new Validator();
     $VALID->check($MENU, [
-        'name' => ['required' => TRUE],
         'type' => ['required' => TRUE],
-        'image_name' => ['required' => TRUE],
+        'name' => ['required' => TRUE],
         'description' => ['required' => TRUE],
-        'price' => ['required' => TRUE]
+        'price' => ['required' => TRUE],
+        'price' => ['required' => TRUE],
+        'image_name' => ['required' => TRUE]
     ]);
 
     if ($VALID->passed()) {
@@ -124,17 +127,6 @@ if (isset($_POST['update'])) {
         }
 
         $_SESSION['ERRORS'] = $VALID->errors();
-
-        header('Location: ' . $_SERVER['HTTP_REFERER']);
-    }
-}
-
-if (isset($_POST['save-data'])) {
-
-    foreach ($_POST['sort'] as $key => $img) {
-        $key = $key + 1;
-
-        $MENU = Menu::arrange($key, $img);
 
         header('Location: ' . $_SERVER['HTTP_REFERER']);
     }

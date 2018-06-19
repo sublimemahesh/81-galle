@@ -29,7 +29,6 @@ include_once(dirname(__FILE__) . '/auth.php');
             <div class="container-fluid">  
                 <?php
                 $vali = new Validator();
-
                 $vali->show_message();
                 ?>
                 <!-- Vertical Layout -->

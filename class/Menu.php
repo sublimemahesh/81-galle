@@ -19,11 +19,12 @@ class Menu {
     public $image_name;
     public $description;
     public $price;
+    public $queue;
 
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`type`,`name`,`image_name`,`description`,`price` FROM `menu` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`type`,`name`,`image_name`,`description`,`price`,`queue` FROM `menu` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -35,6 +36,7 @@ class Menu {
             $this->image_name = $result['image_name'];
             $this->description = $result['description'];
             $this->price = $result['price'];
+            $this->queue = $result['queue'];
 
             return $this;
         }
@@ -42,15 +44,15 @@ class Menu {
 
     public function create() {
 
-        $query = "INSERT INTO `menu` (`type`,`name`,`image_name`,`description`,`price`) VALUES  ('"
+        $query = "INSERT INTO `menu` (`type`,`name`,`image_name`,`description`,`price`,`queue`) VALUES  ('"
                 . $this->type . "','"
                 . $this->name . "','"
                 . $this->image_name . "', '"
                 . $this->description . "', '"
-                . $this->price . "')";
+                . $this->price . "', '"
+                . $this->queue . "')";
 
         $db = new Database();
-
         $result = $db->readQuery($query);
 
         if ($result) {
@@ -84,6 +86,7 @@ class Menu {
                 . "`image_name` ='" . $this->image_name . "', "
                 . "`description` ='" . $this->description . "', "
                 . "`price` ='" . $this->price . "' "
+             
                 . "WHERE `id` = '" . $this->id . "'";
 
         $db = new Database();
@@ -107,9 +110,9 @@ class Menu {
         return $db->readQuery($query);
     }
 
-    public function getMenusById($menu) {
+    public function getMenusById($id) {
 
-        $query = "SELECT * FROM `menu` WHERE `type`= $menu";
+        $query = "SELECT * FROM `menu` WHERE `type`= $id";
 
         $db = new Database();
 
