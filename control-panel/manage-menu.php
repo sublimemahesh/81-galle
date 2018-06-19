@@ -2,7 +2,7 @@
 include_once(dirname(__FILE__) . '/../class/include.php');
 include_once(dirname(__FILE__) . '/auth.php');
 
-$PRODUCT = new Product(NULL);
+$MENU = new Menu(NULL);
 
 //if (isset($_GET['delete'])) {
 //    $PRODUCT_TYPE = new ProductType($_GET['delete']);
@@ -19,7 +19,7 @@ $PRODUCT = new Product(NULL);
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Products</title>
+        <title>Menu</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
@@ -44,11 +44,11 @@ $PRODUCT = new Product(NULL);
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Manage Products
+                                    Manage Menu
                                 </h2>
                                 <ul class="header-dropdown">
                                     <li>
-                                        <a href="view-products.php">
+                                        <a href="view-menu.php">
                                             <i class="material-icons">add</i> 
                                         </a>
                                     </li>
@@ -57,52 +57,30 @@ $PRODUCT = new Product(NULL);
                             <div class="body">
                                 <!--                                <div class="table-responsive">-->
                                 <div>
-                                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
-                                        <thead>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Type</th>
-                                                <th>Name</th> 
-                                                <th>Short Description</th>
-                                                <th>Description</th>
-                                                <th>Option</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Type</th>
-                                                <th>Name</th> 
-                                                <th>Short Description</th>
-                                                <th>Description</th>
-                                                <th>Option</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
+                                    <div class="row clearfix">
 
+                                        <?php
+                                        $MENU = new Menu(NULL);
+                                        foreach ($MENU->all() as $key => $menu) {
+                                            ?>
+                                            <div class="col-md-3"  id="div<?php echo $menu['id']; ?>">
+                                                <div class="photo-img-container">
+                                                    <img src="../upload/menu/<?php echo $menu['image_name']; ?>" class="img-responsive ">
+                                                </div>
+                                                <div class="img-caption">
+                                                    <p class="maxlinetitle"><?php echo $menu['name']; ?></p>
+                                                    <div class="d">
+                                                        <a href="#"  class="delete-menu btn btn-sm btn-danger" data-id="<?php echo $menu['id']; ?>"><button class="glyphicon glyphicon-trash delete-btn"></button></a>
+                                                        <a href="edit-menu.php?id=<?php echo $menu['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
+                                                        <a href="arrange-menu.php?id=<?php echo $menu['id']; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <?php
-                                            $PRODUCT = new Product(NULL);
-                                            foreach ($PRODUCT->all() as $key => $product) {
-                                                ?>
-                                                <tr id="row_<?php echo $product['id']; ?>">
-                                                    <td><?php echo $product['id']; ?></td> 
-                                                    <td><?php echo $product['type']; ?></td> 
-                                                    <td><?php echo $product['name']; ?></td> 
-                                                    <td><?php echo substr($product['short_description'], 0, 30); ?></td> 
-                                                    <td><?php echo substr($product['description'], 0, 30); ?></td> 
-                                                    <td> 
-                                                        <a href="edit-product.php?id=<?php echo $product['id']; ?>" class="op-link btn btn-sm btn-default"><i class="glyphicon glyphicon-pencil"></i></a>  |  
-                                                        <a href="#" class="delete-product btn btn-sm btn-danger" data-id="<?php echo $product['id']; ?>">
-                                                            <i class="waves-effect glyphicon glyphicon-trash" data-type="cancel"></i>
-                                                        </a> |   
-                                                        <a href="view-products.php?id=<?php echo $product['id']; ?>" class="op-link btn btn-sm btn-default"><i class="glyphicon glyphicon-picture"></i></a> 
-                                                    </td>
-                                                </tr>
-                                                <?php
-                                            }
-                                            ?>   
-                                        </tbody>
-                                    </table>
+                                        }
+                                        ?>   
+                                      
+                                    </div>
                                 </div>
                                 <!--                                </div>-->
                             </div>
@@ -116,6 +94,7 @@ $PRODUCT = new Product(NULL);
 
         <script src="plugins/jquery/jquery.min.js"></script>
         <script src="plugins/bootstrap/js/bootstrap.js"></script>
+        <script src="delete/js/menu.js" type="text/javascript"></script>
         <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
         <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
         <script src="plugins/node-waves/waves.js"></script>

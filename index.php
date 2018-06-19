@@ -417,16 +417,16 @@
                                                     </div> <!--//.single tab-->
                                                 </div>
                                             </div><!--//.csi-single-tab-->
-                                            <div class="csi-single-tab">
+                                           <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item5.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="single-item.html">American Humburger</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Caesar Salad</a></h3>
                                                             <p class="price">
-                                                                40<span>$</span>
+                                                                70<span>$</span>
                                                             </p>
                                                         </div>
                                                         <p class="text">
@@ -437,14 +437,32 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item6.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="single-item.html">Burger Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Black Bean Burger</a></h3>
                                                             <p class="price">
-                                                                40<span>$</span>
+                                                                150<span>$</span>
+                                                            </p>
+                                                        </div>
+                                                        <p class="text">
+                                                            With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt
+                                                        </p>
+                                                    </div> <!--//.single tab-->
+                                                </div>
+                                            </div><!--//.csi-single-tab-->
+                                              <div class="csi-single-tab">
+                                                <div class="menu-thumb">
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
+                                                </div>
+                                                <div class="menu-content">
+                                                    <div class="csi-info">
+                                                        <div class="title-area">
+                                                            <h3 class="title"><a href="single-item.html">Caesar Salad</a></h3>
+                                                            <p class="price">
+                                                                70<span>$</span>
                                                             </p>
                                                         </div>
                                                         <p class="text">
@@ -455,36 +473,18 @@
                                             </div><!--//.csi-single-tab-->
                                             <div class="csi-single-tab">
                                                 <div class="menu-thumb">
-                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item1.jpg" alt=""></a>
+                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
                                                 </div>
                                                 <div class="menu-content">
                                                     <div class="csi-info">
                                                         <div class="title-area">
-                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
+                                                            <h3 class="title"><a href="single-item.html">Black Bean Burger</a></h3>
                                                             <p class="price">
                                                                 150<span>$</span>
                                                             </p>
                                                         </div>
                                                         <p class="text">
-                                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Nullam varius a felis eu dictum.
-                                                        </p>
-                                                    </div> <!--//.single tab-->
-                                                </div>
-                                            </div><!--//.csi-single-tab-->
-                                            <div class="csi-single-tab" style="margin-top: -188px;">
-                                                <div class="menu-thumb">
-                                                    <a href="single-item.html"><img src="assets/img/speacial-item/special-item2.jpg" alt=""></a>
-                                                </div>
-                                                <div class="menu-content">
-                                                    <div class="csi-info">
-                                                        <div class="title-area">
-                                                            <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
-                                                            <p class="price">
-                                                                150<span>$</span>
-                                                            </p>
-                                                        </div>
-                                                        <p class="text">
-                                                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Nullam varius a felis eu dictum.
+                                                            With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt
                                                         </p>
                                                     </div> <!--//.single tab-->
                                                 </div>

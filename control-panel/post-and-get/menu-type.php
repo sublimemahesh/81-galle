@@ -35,8 +35,7 @@ if (isset($_POST['create'])) {
 
     $VALID->check($MENU_TYPE, [
         'name' => ['required' => TRUE],
-         'image_name' => ['required' => TRUE],
-       
+        'image_name' => ['required' => TRUE],
     ]);
 
     if ($VALID->passed()) {
@@ -48,7 +47,6 @@ if (isset($_POST['create'])) {
         $VALID->addError("Your data was saved successfully", 'success');
         $_SESSION['ERRORS'] = $VALID->errors();
         header('Location: ' . $_SERVER['HTTP_REFERER']);
-       
     } else {
 
         if (!isset($_SESSION)) {
@@ -63,11 +61,11 @@ if (isset($_POST['create'])) {
 
 if (isset($_POST['update'])) {
     $dir_dest = '../../upload/menu-type/';
-        
+
     $handle = new Upload($_FILES['image_name']);
-  
-     $img = $_POST ["oldImageName"];
-    
+
+    $img = $_POST ["oldImageName"];
+
     $imgName = null;
 
     if ($handle->uploaded) {
@@ -109,7 +107,6 @@ if (isset($_POST['update'])) {
         $VALID->addError("Your changes saved successfully", 'success');
         $_SESSION['ERRORS'] = $VALID->errors();
         header('Location: ' . $_SERVER['HTTP_REFERER']);
-        
     } else {
 
         if (!isset($_SESSION)) {

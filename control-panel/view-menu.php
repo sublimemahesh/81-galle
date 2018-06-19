@@ -44,7 +44,7 @@ $MENU_TYPE = new MenuType($id);
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2>Create Products</h2>
+                                <h2>Create Menu</h2>
                                 <ul class="header-dropdown">
                                     <li class="">
                                         <a href="manage-menu-type.php">
@@ -66,7 +66,7 @@ $MENU_TYPE = new MenuType($id);
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="file" id="image" class="form-control" name="image" required="true">
+                                                <input type="file" id="image_name" class="form-control" name="image_name" required="true">
                                             </div>
                                         </div>
                                     </div>
@@ -87,7 +87,7 @@ $MENU_TYPE = new MenuType($id);
                                         </div>
                                     </div>
                                     <div class="col-md-12"> 
-                                        <input type="hidden" id="id" value="<?php echo $PRODUCT_TYPE->id; ?>" name="id"/>
+                                        <input type="hidden" id="id" value="<?php echo $MENU_TYPE->id; ?>" name="id"/>
                                         <input type="submit" name="create" class="btn btn-primary TYPEm-t-15 waves-effect" value="create"/>
                                     </div>
                                 </form>
@@ -97,20 +97,20 @@ $MENU_TYPE = new MenuType($id);
                            
                                 <div class="row clearfix">
                                     <?php
-                                    $PRODUCT = Product::getProductsById($id);
-                                    if (count($PRODUCT) > 0) {
-                                        foreach ($PRODUCT as $key => $product) {
+                                    $MENU = Menu::getMenusById($id);
+                                    if (count($MENU) > 0) {
+                                        foreach ($MENU as $key => $menu) {
                                             ?>
-                                            <div class="col-md-3"  id="div<?php echo $product['id']; ?>">
+                                            <div class="col-md-3"  id="div<?php echo $menu['id']; ?>">
                                                 <div class="photo-img-container">
-                                                    <img src="../upload/product-type/product/<?php echo $product['image_name']; ?>" class="img-responsive ">
+                                                    <img src="../upload/menu/<?php echo $menu['image_name']; ?>" class="img-responsive ">
                                                 </div>
                                                 <div class="img-caption">
-                                                    <p class="maxlinetitle"><?php echo $product['name']; ?></p>
+                                                    <p class="maxlinetitle"><?php echo $menu['name']; ?></p>
                                                     <div class="d">
-                                                        <a href="#" class="delete-product" data-id="<?php echo $product['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
-                                                        <a href="edit-product.php?id=<?php echo $product['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
-                                                        <a href="arrange-products.php?id=<?php echo $id; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
+                                                        <a href="#" class="delete-product" data-id="<?php echo $menu['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
+                                                        <a href="edit-menu.php?id=<?php echo $menu['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
+                                                        <a href="arrange-menu.php?id=<?php echo $id; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
                                                     </div>
                                                 </div>
                                             </div>
