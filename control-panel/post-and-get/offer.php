@@ -9,7 +9,6 @@ if (isset($_POST['create'])) {
 
     $OFFER->title = mysql_real_escape_string($_POST['title']);
     $OFFER->short_description = mysql_real_escape_string($_POST['short_description']);
-    $OFFER->description = mysql_real_escape_string($_POST['description']);
     $OFFER->price = mysql_real_escape_string($_POST['price']);
     $OFFER->discount = mysql_real_escape_string($_POST['discount']);
 
@@ -40,7 +39,6 @@ if (isset($_POST['create'])) {
     $VALID->check($OFFER, [
         'title' => ['required' => TRUE],
         'short_description' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
         'price' => ['required' => TRUE],
         'discount' => ['required' => TRUE],
         'image_name' => ['required' => TRUE]
@@ -99,7 +97,6 @@ if (isset($_POST['update'])) {
     $OFFER->image_name = $_POST['oldImageName'];
     $OFFER->title = mysql_real_escape_string($_POST['title']);
     $OFFER->short_description = mysql_real_escape_string($_POST['short_description']);
-    $OFFER->description = mysql_real_escape_string($_POST['description']);
     $OFFER->price = mysql_real_escape_string($_POST['price']);
     $OFFER->discount = mysql_real_escape_string($_POST['discount']);
 
@@ -108,7 +105,6 @@ if (isset($_POST['update'])) {
     $VALID->check($OFFER, [
         'title' => ['required' => TRUE],
         'short_description' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
         'price' => ['required' => TRUE],
         'discount' => ['required' => TRUE],
         'image_name' => ['required' => TRUE]

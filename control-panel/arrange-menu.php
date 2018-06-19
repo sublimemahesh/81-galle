@@ -4,15 +4,14 @@ include_once(dirname(__FILE__) . '/auth.php');
 
 $id = $_GET['id'];
 
-
-   $PRODUCT= Product::getProductsById($id);
+$MENU = new Menu(NULL);
 ?>
 <!DOCTYPE html>
 <html> 
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Products</title>
+        <title>Menu</title>
         <!-- Favicon-->
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -38,29 +37,31 @@ $id = $_GET['id'];
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2>Arrange Products</h2>
+                                <h2>Arrange Menu</h2>
                                 <ul class="header-dropdown">
                                     <li class="">
-                                        <a href="view-products.php?id=<?php echo $id ;?>">
+                                        <a href="view-menu.php?id=<?php echo $id ;?>">
                                             <i class="material-icons">list</i> 
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="body">
-                                <form method="post" action="post-and-get/product.php" class="form-horizontal" >
+                                <form method="post" action="post-and-get/menu.php" class="form-horizontal" >
                                     <div class="panel-body">
                                         <div class="row">
                                             <div class="col-md-12 arrange-container">
                                                 <ul id="sortable">
+                                                   
                                                     <?php
-                                                    if (count($PRODUCT) > 0) {
-                                                        foreach ($PRODUCT as $key => $img) {
+                                                    if (count($MENU->all()) > 0) {
+                                                        foreach ($MENU->all() as $key => $img) {
                                                             ?>
+                                                    
                                                             <div class="col-md-3" style="list-style: none;">
                                                                 <li class="ui-state-default">
                                                                     <span class="number-class">(<?php echo $key + 1; ?>)</span>
-                                                                    <img class="img-responsive" src="../upload/product-type/product/<?php echo $img["image_name"]; ?>" alt=""/>
+                                                                    <img class="img-responsive" src="../upload/menu/<?php echo $img["image_name"]; ?>" alt=""/>
                                                                     <input type="hidden" name="sort[]"  value="<?php echo $img["id"]; ?>" class="sort-input"/>
 
                                                                 </li>

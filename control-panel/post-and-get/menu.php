@@ -131,3 +131,13 @@ if (isset($_POST['update'])) {
         header('Location: ' . $_SERVER['HTTP_REFERER']);
     }
 }
+if (isset($_POST['save-data'])) {
+
+    foreach ($_POST['sort'] as $key => $img) {
+        $key = $key + 1;
+
+        $MENU = Menu::arrange($key, $img);
+
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
+}
