@@ -141,7 +141,7 @@
                                 <div class="single-news">
                                     <figure>
                                         <a href="view-menu.php"><img src="assets/img/speacial-item/special-item2.jpg" alt="news"/></a>
-                                          <figcaption>
+                                        <figcaption style="width: 140px;">
                                             <h4 class="date">Breakfast</h4>
                                         </figcaption>
                                     </figure>

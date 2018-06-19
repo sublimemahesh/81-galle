@@ -34,11 +34,7 @@ $MENU_TYPE = new MenuType($id);
 
         <section class="content">
             <div class="container-fluid">  
-                <?php
-                $vali = new Validator();
-
-                $vali->show_message();
-                ?>
+                
                 <!-- Vertical Layout -->
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -66,12 +62,21 @@ $MENU_TYPE = new MenuType($id);
                                         </div>
                                     </div>
 
-                                    <div class="col-md-12">
+                                    <div class="col-md-12">                                       
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <input type="file" id="image_name" class="form-control" name="image_name"  >
+                                                <img src="../upload/menu-type/<?php echo $MENU_TYPE->image_name;?>" id="image_name" class="view-edit-img img img-responsive img-thumbnail" name="image_name" alt="old image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12"> 
+                                        <input type="hidden" id="oldImageName" value="<?php echo $MENU_TYPE->image_name; ?>" name="oldImageName"/>
                                         <input type="hidden" id="id" value="<?php echo $MENU_TYPE->id; ?>" name="id"/>
-<!--                                            <input type="hidden" id="authToken" value="<?php echo $_SESSION["authToken"]; ?>" name="authToken"/>-->
+                                        <input type="hidden" id="authToken" value="<?php echo $_SESSION["authToken"]; ?>" name="authToken"/>
                                         <button type="submit" class="btn btn-primary m-t-15 waves-effect" name="update" value="update">Save Changes</button>
                                     </div>
-                                    <div class="row clearfix">  </div>
+                                    <div class="row clearfix"></div>
                                 </form>
                             </div>
                         </div>

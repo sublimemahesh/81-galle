@@ -65,12 +65,12 @@ $MENU_TYPE = new MenuType(NULL);
                                                 $MENU_TYPE = new MenuType(NULL);
                                                 foreach ($MENU_TYPE->all() as $key => $menu) {
                                                     ?>
-                                                    <tr id="row_<?php echo $menu['id']; ?>">
+                                                    <tr id="div<?php echo $menu['id']; ?>">
                                                         <td><?php echo $menu['id']; ?></td> 
                                                         <td><?php echo $menu['name']; ?></td> 
-                                                        <td> 
+                                                        <td>
                                                             <a href="edit-menu-type.php?id=<?php echo $menu['id']; ?>" class="op-link btn btn-sm btn-default"><i class="glyphicon glyphicon-pencil"></i></a>  |  
-                                                            <a href="#" class="delete-pages btn btn-sm btn-danger" data-id="<?php echo $menu['id']; ?>">
+                                                            <a href="#" class="delete-menu-type btn btn-sm btn-danger" data-id="<?php echo $menu['id']; ?>">
                                                                 <i class="waves-effect glyphicon glyphicon-trash" data-type="cancel"></i>
                                                             </a> |   
                                                         </td>
@@ -90,8 +90,10 @@ $MENU_TYPE = new MenuType(NULL);
                 <!-- #END# Manage brand -->
             </div>
         </section>
+       
         <script src="plugins/jquery/jquery.min.js"></script>
         <script src="plugins/bootstrap/js/bootstrap.js"></script>
+                 <script src="delete/js/menu-type.js" type="text/javascript"></script>
         <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
         <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
         <script src="plugins/node-waves/waves.js"></script>
@@ -111,7 +113,8 @@ $MENU_TYPE = new MenuType(NULL);
         <script src="plugins/bootstrap-notify/bootstrap-notify.js"></script>
         <script src="js/pages/ui/dialogs.js"></script>
         <script src="js/demo.js"></script>
-        <script src="delete/js/product-type.js" type="text/javascript"></script>
+
+      
     </body>
 
 </html> 
