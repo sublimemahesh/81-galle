@@ -7,9 +7,6 @@ if ($_POST['option'] == 'delete') {
 
     $ALBUM_PHOTO = new AlbumPhoto($_POST['id']);
 
-    unlink('../../../upload/photo-album/gallery/' . $ALBUM_PHOTO->image_name);
-    unlink('../../../upload/photo-album/gallery/thumb/' . $ALBUM_PHOTO->image_name);
-
     $result = $ALBUM_PHOTO->delete();
 
 

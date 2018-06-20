@@ -4,13 +4,7 @@ include_once(dirname(__FILE__) . '/auth.php');
 
 $MENU = new Menu(NULL);
 
-//if (isset($_GET['delete'])) {
-//    $PRODUCT_TYPE = new ProductType($_GET['delete']);
-//    $imgName = $PRODUCT_TYPE->image_name;
-//    unlink('../upload/product-type/' . $imgName);
-//    $PRODUCT_TYPE->delete();
-//}
-//
+
 ?>
 
 
@@ -70,7 +64,7 @@ $MENU = new Menu(NULL);
                                                 <div class="img-caption">
                                                     <p class="maxlinetitle"><?php echo $menu['name']; ?></p>
                                                     <div class="d">
-                                                        <a href="#"  class="delete-menu btn btn-sm btn-danger" data-id="<?php echo $menu['id']; ?>"><button class="glyphicon glyphicon-trash delete-btn"></button></a>
+                                                         <a href="#"  class="delete-menu" data-id="<?php echo $menu['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
                                                         <a href="edit-menu.php?id=<?php echo $menu['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
                                                         <a href="arrange-menu.php?id=<?php echo $menu['id']; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
                                                     </div>
