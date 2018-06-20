@@ -72,7 +72,8 @@ $MENU_TYPE = new MenuType(NULL);
                                                             <a href="edit-menu-type.php?id=<?php echo $menu['id']; ?>" class="op-link btn btn-sm btn-default"><i class="glyphicon glyphicon-pencil"></i></a>  |  
                                                             <a href="#" class="delete-menu-type btn btn-sm btn-danger" data-id="<?php echo $menu['id']; ?>">
                                                                 <i class="waves-effect glyphicon glyphicon-trash" data-type="cancel"></i>
-                                                            </a> |   
+                                                            </a> | 
+                                                            <a href="arrange-menu-type.php?id=<?php echo $menu['id']; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
                                                         </td>
                                                     </tr>
                                                     <?php

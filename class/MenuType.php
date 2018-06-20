@@ -11,11 +11,12 @@ class MenuType {
     public $id;
     public $name;
     public $image_name;
+    public $queue;
 
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`name`,`image_name` FROM `menu_type` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`name`,`image_name`,`queue` FROM `menu_type` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -24,6 +25,7 @@ class MenuType {
             $this->id = $result['id'];
             $this->name = $result['name'];
             $this->image_name = $result['image_name'];
+            $this->queue = $result['queue'];
 
 
             return $this;
@@ -34,7 +36,8 @@ class MenuType {
 
         $query = "INSERT INTO `menu_type` (`name`,`image_name`) VALUES  ('"
                 . $this->name . "','"
-                . $this->image_name . "')";
+                . $this->image_name . "','"
+                . $this->queue . "')";
 
         $db = new Database();
 
@@ -51,7 +54,7 @@ class MenuType {
 
     public function all() {
 
-        $query = "SELECT * FROM `menu_type`";
+        $query = "SELECT * FROM `menu_type` ORDER BY queue ASC";
         $db = new Database();
         $result = $db->readQuery($query);
         $array_res = array();
@@ -108,6 +111,13 @@ class MenuType {
             $MENU->id = $photo["id"];
             $MENU->delete();
         }
+    }
+
+    public function arrange($key, $img) {
+        $query = "UPDATE `menu_type` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
+        $db = new Database();
+        $result = $db->readQuery($query);
+        return $result;
     }
 
 }

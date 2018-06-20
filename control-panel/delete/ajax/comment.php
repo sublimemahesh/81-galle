@@ -7,8 +7,6 @@ if ($_POST['option'] == 'delete') {
 
     $COMMENT = new Comments($_POST['id']);
   
-     unlink('../../../upload/comments/' . $COMMENT->image_name);
-    
     $result = $COMMENT->delete();
 
     if ($result) {
