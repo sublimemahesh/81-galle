@@ -69,12 +69,13 @@ $MENU_TYPE = new MenuType(NULL);
                                                         <td><?php echo $menu['id']; ?></td> 
                                                         <td><?php echo $menu['name']; ?></td> 
                                                         <td>
-                                                            <a href="edit-menu-type.php?id=<?php echo $menu['id']; ?>" class="op-link btn btn-sm btn-default"><i class="glyphicon glyphicon-pencil"></i></a>  |  
-                                                            <a href="#" class="delete-menu-type btn btn-sm btn-danger" data-id="<?php echo $menu['id']; ?>">
-                                                                <i class="waves-effect glyphicon glyphicon-trash" data-type="cancel"></i>
-                                                            </a> | 
-                                                            <a href="arrange-menu-type.php?id=<?php echo $menu['id']; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
+                                                            <div class="d">
+                                                                <a href="#"  class="delete-menu-type" data-id="<?php echo $menu['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
+                                                                <a href="edit-menu-type.php?id=<?php echo $menu['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
+                                                                <a href="arrange-menu-type.php?id=<?php echo $menu['id']; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
+                                                            </div>
                                                         </td>
+                                                         
                                                     </tr>
                                                     <?php
                                                 }

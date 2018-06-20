@@ -1,4 +1,5 @@
 <!doctype html>
+<?php include_once './class/include.php'; ?>
 <html class="no-js" lang="en">
 
     <!-- Mirrored from httpcoder.com/demo/html/foodking/view/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Jun 2018 04:59:03 GMT -->
@@ -53,7 +54,7 @@
         <link rel="manifest" href="assets/img/favicon/manifest.json">
         <link href="assets/css/simplelightbox.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/simplelightbox.css" rel="stylesheet" type="text/css"/>
-        
+
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" media="all" />
 
@@ -106,7 +107,7 @@
                                             About Our History
                                         </h2>
                                         <ul class="breadcrumb">
-                                            <li><a href="index.html"><i class="icon-home6"></i>Home</a></li>
+                                            <li><a href="index.php"><i class="icon-home6"></i>Home</a></li>
                                             <li class="active">Contact</li>
                                         </ul>
                                     </div>
@@ -134,35 +135,25 @@
                             </div>
 
                             <section id="gallery">
-                               
-                           <div class="col-md-3">
-                                    <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" style="padding-bottom: 31px;"/></a>
-                                      <div class="clear"></div>
-                                    </div>
-                                    
-                                </div> 
-                                
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" style="padding-bottom: 31px;"/></a>
-                                        <div class="clear"></div>
-                                    </div>
-                                    
-                                </div>  
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" style="padding-bottom: 31px;"/></a>
-                                        <div class="clear"></div>
-                                    </div>
-                                    
-                                </div>  
-                                <div class="col-md-3">
-                                    <div class="gallery">
-                                        <a href="assets/img/speacial-item/special-item2.jpg" class="big"><img src="assets/img/speacial-item/special-item2.jpg" alt="" title="Beautiful Image" style="padding-bottom: 31px;"/></a>
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>  
+
+                                <?php
+                                $ALBUMPHOTO = new AlbumPhoto(NULL);
+                                $IMAGES = $ALBUMPHOTO->getAlbumPhotosById(3);
+
+                                foreach ($IMAGES as $image) {
+                                    ?>
+
+                                    <div class="col-md-3">
+                                        <div class="gallery">
+                                            <a href="upload/photo-album/gallery/<?php echo $image['image_name'] ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" alt="" title="Beautiful Image" style="padding-bottom: 31px;"/></a>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <h6>                               
+                                            <?php echo $image['caption'] ?>
+                                        </h6>
+                                    </div> 
+                                <?php }
+                                ?>
                             </section>
                         </div><!-- //.INNER -->
                     </div>
@@ -196,7 +187,7 @@
         <script src="assets/js/custom.script.js"></script>
         <script src="switcher/js/switcher.js"></script> 
         <script src="assets/js/simple-lightbox.min.js" type="text/javascript"></script>
-        
+
         <script type="text/javascript">/* <![CDATA[ */(function (d, s, a, i, j, r, l, m, t) {
                 try {
                     l = d.getElementsByTagName('a');
@@ -232,50 +223,50 @@
         <script src="assets/js/simple-lightbox.min.js" type="text/javascript"></script>
         <!--light box script-->
         <script>
-                    $(function () {
-                        var $gallery = $('.gallery a').simpleLightbox();
+            $(function () {
+                var $gallery = $('.gallery a').simpleLightbox();
 
-                        $gallery.on('show.simplelightbox', function () {
-                            console.log('Requested for showing');
+                $gallery.on('show.simplelightbox', function () {
+                    console.log('Requested for showing');
+                })
+                        .on('shown.simplelightbox', function () {
+                            console.log('Shown');
                         })
-                                .on('shown.simplelightbox', function () {
-                                    console.log('Shown');
-                                })
-                                .on('close.simplelightbox', function () {
-                                    console.log('Requested for closing');
-                                })
-                                .on('closed.simplelightbox', function () {
-                                    console.log('Closed');
-                                })
-                                .on('change.simplelightbox', function () {
-                                    console.log('Requested for change');
-                                })
-                                .on('next.simplelightbox', function () {
-                                    console.log('Requested for next');
-                                })
-                                .on('prev.simplelightbox', function () {
-                                    console.log('Requested for prev');
-                                })
-                                .on('nextImageLoaded.simplelightbox', function () {
-                                    console.log('Next image loaded');
-                                })
-                                .on('prevImageLoaded.simplelightbox', function () {
-                                    console.log('Prev image loaded');
-                                })
-                                .on('changed.simplelightbox', function () {
-                                    console.log('Image changed');
-                                })
-                                .on('nextDone.simplelightbox', function () {
-                                    console.log('Image changed to next');
-                                })
-                                .on('prevDone.simplelightbox', function () {
-                                    console.log('Image changed to prev');
-                                })
-                                .on('error.simplelightbox', function (e) {
-                                    console.log('No image found, go to the next/prev');
-                                    console.log(e);
-                                });
-                    });
+                        .on('close.simplelightbox', function () {
+                            console.log('Requested for closing');
+                        })
+                        .on('closed.simplelightbox', function () {
+                            console.log('Closed');
+                        })
+                        .on('change.simplelightbox', function () {
+                            console.log('Requested for change');
+                        })
+                        .on('next.simplelightbox', function () {
+                            console.log('Requested for next');
+                        })
+                        .on('prev.simplelightbox', function () {
+                            console.log('Requested for prev');
+                        })
+                        .on('nextImageLoaded.simplelightbox', function () {
+                            console.log('Next image loaded');
+                        })
+                        .on('prevImageLoaded.simplelightbox', function () {
+                            console.log('Prev image loaded');
+                        })
+                        .on('changed.simplelightbox', function () {
+                            console.log('Image changed');
+                        })
+                        .on('nextDone.simplelightbox', function () {
+                            console.log('Image changed to next');
+                        })
+                        .on('prevDone.simplelightbox', function () {
+                            console.log('Image changed to prev');
+                        })
+                        .on('error.simplelightbox', function (e) {
+                            console.log('No image found, go to the next/prev');
+                            console.log(e);
+                        });
+            });
         </script>
-        
+
     </body>

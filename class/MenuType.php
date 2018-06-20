@@ -36,8 +36,7 @@ class MenuType {
 
         $query = "INSERT INTO `menu_type` (`name`,`image_name`) VALUES  ('"
                 . $this->name . "','"
-                . $this->image_name . "','"
-                . $this->queue . "')";
+                . $this->image_name . "')";
 
         $db = new Database();
 
