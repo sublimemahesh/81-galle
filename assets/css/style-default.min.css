@@ -1530,8 +1530,8 @@ blockquote:before{
 .csi-special-single .single-info .price-area .price{
     background:#f9f9f9;
     border-radius:50%;
-    width:80px;
-    height:80px;
+    width: 115px;
+    height: 90px;
     font-family:Cookie,cursive;
     font-size:2.6rem;
     line-height:3.9000000000000004rem;
@@ -2086,14 +2086,14 @@ blockquote:before{
     bottom:1.6rem;
     left:1.6rem;
     border-radius:4px;
-    width: 113px;
-    height: 33px;
+    width: 197px;
+    height: 50px;
     transition-duration:.5s
 }
 .csi-news .single-news figure figcaption .date{
     font-family:Cookie,cursive;
     font-size:26px;
-    font-size:2.6rem;
+   font-size: 5.6rem;
     font-weight:900;
     text-align:center;
     color:#00695c;
@@ -3579,4 +3579,7 @@ textarea.form-control{
     .csi-special-single .single-info .price-area .price{
         line-height:7.5rem
     }
+}
+.menu-name{
+    margin-top: 13px;
 }

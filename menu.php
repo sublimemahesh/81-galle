@@ -1,4 +1,5 @@
 <!doctype html>
+<?php include_once './class/include.php'; ?>
 <html class="no-js" lang="en">
 
     <!-- Mirrored from httpcoder.com/demo/html/foodking/view/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Jun 2018 04:59:03 GMT -->
@@ -9,7 +10,7 @@
         <!-- The above 3 meta tags *must* come first in the head -->
 
         <!-- SITE TITLE -->
-        <title>FoodKing</title>
+        <title>81-Galle</title>
         <meta name="description" content="Food, Restaurant & Cafe HTML Template" />
         <meta name="keywords" content="Food, Restaurant, Cafe, Responsive, HTML5" />
         <meta name="author" content="httpcoder.com" />
@@ -93,7 +94,7 @@
 
 
             <!--Banner-->
-      
+
             <!--Banner END-->
 
 
@@ -106,7 +107,7 @@
                                 <div class="col-xs-12">
                                     <div class="csi-heading-area">
                                         <h2 class="csi-heading">
-                                           Food Items
+                                            Food Items
                                         </h2>
                                         <ul class="breadcrumb">
                                             <li><a href="index.php"><i class="icon-home6"></i>Home</a></li>
@@ -120,63 +121,40 @@
                     </div>
                 </div>
             </section>
-         <section>
-        <div id="csi-news" class="csi-news">
-            <div class="csi-inner">
-                <div class="container">
-                    <div class="news-area">
-                        <div class="row">
-                      
-                            <div class="col-sm-6 col-md-3">
-                                <div class="single-news">
-                                    <figure>
-                                        <a href="view-menu.php"><img src="assets/img/speacial-item/special-item1.jpg" alt="news"/></a>
-                                          <figcaption>
-                                            <h4 class="date">Special</h4>
-                                        </figcaption>
-                                    </figure>
+            <section>
+                <div id="csi-news" class="csi-news">
+                    <div class="csi-inner">
+                        <div class="container">
+                            <div class="news-area">
+                                <div class="row">
+
+                                    <?php
+                                    $MENU_TYPE = MenuType::all();
+                                    foreach ($MENU_TYPE as $menu) {
+                                        ?>
+
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="single-news">
+                                                <figure>
+                                                    <a href="view-menu.php?id=<?php echo $menu["id"]; ?>"><img src="upload/menu-type/<?php echo $menu['image_name']; ?>" alt="news"/></a>
+                                                    <figcaption>
+                                                        <h4 class="date" style="margin-top: 13px;"><a class="category_title" href="view-menu.php?id=<?php echo $menu["id"]; ?>" title=""><?php echo $menu['name']; ?></a></h4> 
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
+
                                 </div>
+
                             </div>
-                            <div class="col-sm-6 col-md-3">
-                                <div class="single-news">
-                                    <figure>
-                                        <a href="view-menu.php"><img src="assets/img/speacial-item/special-item2.jpg" alt="news"/></a>
-                                        <figcaption style="width: 140px;">
-                                            <h4 class="date">Breakfast</h4>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3">
-                                <div class="single-news">
-                                    <figure>
-                                        <a href="view-menu.php"><img src="assets/img/speacial-item/special-item3.jpg" alt="news"/></a>
-                                        <figcaption>
-                                               <h4 class="date">Lunch</h4>
-                                        </figcaption>
-                                    </figure>
-                                   
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3">
-                                <div class="single-news">
-                                    <figure>
-                                        <a href="view-menu.php"><img src="assets/img/speacial-item/special-item4.jpg" alt="news"/></a>
-                                        <figcaption>
-                                             <h4 class="date">Dinner</h4>
-                                        </figcaption>
-                                    </figure>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                      
-                    </div>
-                    
-                </div><!-- //.CONTAINER -->
-            </div><!-- //.INNER -->
-        </div>
-    </section>
+
+                        </div><!-- //.CONTAINER -->
+                    </div><!-- //.INNER -->
+                </div>
+            </section>
 
             <?php
             include './footer.php';
