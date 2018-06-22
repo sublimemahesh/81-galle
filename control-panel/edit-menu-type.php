@@ -34,7 +34,12 @@ $MENU_TYPE = new MenuType($id);
 
         <section class="content">
             <div class="container-fluid">  
-                
+
+                <?php
+                $vali = new Validator();
+                $vali->show_message();
+                ?>
+
                 <!-- Vertical Layout -->
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -66,7 +71,7 @@ $MENU_TYPE = new MenuType($id);
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <input type="file" id="image_name" class="form-control" name="image_name"  >
-                                                <img src="../upload/menu-type/<?php echo $MENU_TYPE->image_name;?>" id="image_name" class="view-edit-img img img-responsive img-thumbnail" name="image_name" alt="old image">
+                                                <img src="../upload/menu-type/<?php echo $MENU_TYPE->image_name; ?>" id="image_name" class="view-edit-img img img-responsive img-thumbnail" name="image_name" alt="old image">
                                             </div>
                                         </div>
                                     </div>

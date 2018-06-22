@@ -21,7 +21,7 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = Helper::randamId();
-        $handle->image_x = 900;
+        $handle->image_x = 700;
         $handle->image_y = 500;
 
         $handle->Process($dir_dest);

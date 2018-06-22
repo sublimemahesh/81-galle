@@ -10,7 +10,7 @@
         <!-- The above 3 meta tags *must* come first in the head -->
 
         <!-- SITE TITLE -->
-        <title>FoodKing</title>
+        <title>81-Galle</title>
         <meta name="description" content="Food, Restaurant & Cafe HTML Template" />
         <meta name="keywords" content="Food, Restaurant, Cafe, Responsive, HTML5" />
         <meta name="author" content="httpcoder.com" />
@@ -145,12 +145,10 @@
 
                                     <div class="col-md-3">
                                         <div class="gallery">
-                                            <a href="upload/photo-album/gallery/<?php echo $image['image_name'] ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" alt="" title="Beautiful Image" style="padding-bottom: 31px;"/></a>
+                                            <a href="upload/photo-album/gallery/<?php echo $image['image_name'] ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" alt="" title="81-Galle" style="padding-bottom: 31px;"/></a>
                                             <div class="clear"></div>
                                         </div>
-                                        <h6>                               
-                                            <?php echo $image['caption'] ?>
-                                        </h6>
+                                       
                                     </div> 
                                 <?php }
                                 ?>
