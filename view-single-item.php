@@ -1,5 +1,12 @@
 <!doctype html>
-<?php include_once './class/include.php'; ?>
+<?php include_once './class/include.php';
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $MENU = new Menu($id);
+}
+
+
+?>
 <html class="no-js" lang="en">
 
     <!-- Mirrored from httpcoder.com/demo/html/foodking/view/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Jun 2018 04:59:03 GMT -->
@@ -121,55 +128,37 @@
                     </div>
                 </div>
             </section>
+            
             <section>
                 <div id="csi-special" class="csi-special">
                     <div class="csi-inner">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="csi-heading">
-                                        <h3 class="subtitle">Food Items</h3>
-                                        <h2 class="title">Special Offer</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="csi-special-content">
-                                <div class="row">
-                                    <?php
-                                    $OFFER = Offer::all();
-                                    foreach ($OFFER as $offer) {
-                                        ?>
-                                        <div class="col-xs-12 col-sm-6 col-md-4">
-                                            <div class="csi-special-single">
-                                                <figure>
-                                                    <a href="offer.php"><img src="upload/offer/<?php echo $offer['image_name']; ?>" alt=""></a>
-                                                    <figcaption>
-                                                        <div class="csi-hover-link">
-                                                            <div class="csi-vertical">
-                                                                <h3 style="color: cornsilk;"><?php echo $offer["discount"]; ?><span>%</span></h3>
-                                                                </a>
-                                                            </div>
+                            <section>
+                                <div class="csi-single-item">
+                                    <div class="csi-inner" style="margin-top: -135px;">
+                                        <div class="container">
+                                            <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <figure class="single-thumb">
+                                                            <img src="upload/menu/<?php echo   $MENU->image_name ?>" alt="Special Food">
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="csi-singleitem-content">
+                                                            <h1 class="title"><?php echo $MENU->name; ?></h1>
+                                                            <h3 class="price">Price: <span><?php echo $MENU->price; ?><b>.00</b></span></h3>
+                                                            <p>
+                                                                <?php echo $MENU->description; ?>
+                                                            </p>
                                                         </div>
-                                                    </figcaption>
-                                                </figure>
-                                                <div class="single-info">
-                                                    <div class="price-area">
-                                                        <h3 class="price"><?php echo $offer["price"]; ?>.00<span></span></h3>
                                                     </div>
-                                                    <div class="speacial-info">
-                                                        <h4 class="subtitle"><?php echo $offer["title"]; ?></h4>
-                                                        <h3 class="title"><?php echo $offer["short_description"]; ?></h3>
-                                                    </div>
-                                                </div>
-                                            </div><!--//.csi-special-single-->
-                                        </div>
-
-                                        <?php
-                                    }
-                                    ?>
+                                                    
+                                            </div>
+                                        </div><!-- //.CONTAINER -->
+                                    </div><!-- //.INNER -->
                                 </div>
-                            </div>
-                    
+                            </section>
+
                         </div><!-- //.CONTAINER -->
                     </div><!-- //.INNER -->
                 </div>

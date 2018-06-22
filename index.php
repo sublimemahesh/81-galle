@@ -1,6 +1,8 @@
 <!doctype html>
 <?php
 include_once './class/include.php';
+
+
 ?>
 <html class="no-js" lang="en">
 
@@ -233,18 +235,19 @@ include_once './class/include.php';
 
                                                         <div class="csi-single-tab">
                                                             <div class="menu-thumb">
-                                                                <a href="index.php"><img src="upload/menu/<?php echo $menu['image_name']; ?>" alt=""></a>
+                                                                
+                                                                  <a href="view-single-item.php?id=<?php echo $menu['id'];?>"><img src="upload/menu/<?php echo $menu['image_name']; ?>" alt=""></a>
                                                             </div>
                                                             <div class="menu-content">
                                                                 <div class="csi-info">
                                                                     <div class="title-area">
-                                                                        <h3 class="title"><a href="index.php"><?php echo $menu['name']; ?></a></h3>
+                                                                        <h3 class="title"><a href="index.php">   <?php echo substr($menu['name'], 0, 15) . '...'; ?></a></h3>
                                                                         <p class="price">
                                                                             Rs.<?php echo $menu["price"]; ?>.00<span></span>
                                                                         </p>
                                                                     </div>
                                                                     <p class="text">
-                                                                        <?php echo $menu["description"]; ?></h3>
+                                                                        <?php echo substr($menu['description'], 0, 80) . '...'; ?>
                                                                     </p>
                                                                 </div> <!--//.single tab-->
                                                             </div>

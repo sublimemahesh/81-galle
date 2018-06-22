@@ -144,19 +144,20 @@ if (isset($_GET['id'])) {
                                                 ?>
                                                 <div class="csi-single-tab">
                                                     <div class="menu-thumb">
-                                                        <a href="view-menu.php?id=<?php echo $menu['type']; ?>">
+                                                        <a href="view-single-item.php?id=<?php echo $menu['id'];?>">
                                                             <img src="upload/menu/<?php echo $menu['image_name']; ?>" alt=""></a>
                                                     </div>
                                                     <div class="menu-content">
                                                         <div class="csi-info">
                                                             <div class="title-area">
-                                                                <h3 class="title"><a href="#"><?php echo $menu["name"]; ?></a></h3>
+                                                                <h3 class="title"><a href=""><?php echo substr($menu['name'], 0, 15) . '...'; ?></a></h3>
                                                                 <p class="price">
-                                                                    <span>Rs.<?php echo $menu["price"]; ?>.00</span>
+                                                                  
+                                                                    <h3 class="price"><?php echo $menu["price"]; ?>.00<span></span></h3>
                                                                 </p>
                                                             </div>
                                                             <p class="text">
-                                                                <?php echo substr($menu["description"], 0, 50) . '...'; ?>
+                                                                <?php echo substr($menu["description"], 0, 80) . '...'; ?>
                                                             </p>
                                                         </div> <!--//.single tab-->
                                                     </div>
