@@ -3016,7 +3016,7 @@ textarea.form-control{
     font-family:Cookie,cursive;
     font-size:6.8rem;
     line-height:10.2rem;
-    line-height:9rem;
+    line-height:6rem;
     font-weight:400;
     color:#212739;
     margin:0
@@ -3581,4 +3581,10 @@ textarea.form-control{
 }
 .menu-name{
     margin-top: 13px;
+}
+@media (max-width:600px){
+    .csi-slider .owl-carousel .owl-item,.csi-slider .owl-carousel .owl-item img{
+        height:350px
+    }
+   
 }
