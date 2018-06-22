@@ -21,7 +21,7 @@ if (isset($_POST['create'])) {
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = Helper::randamId();
         $handle->image_x = 900;
-        $handle->image_y = 500;
+        $handle->image_y = 1200;
 
         $handle->Process($dir_dest);
 
@@ -76,7 +76,7 @@ if (isset($_POST['update'])) {
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $_POST ["oldImageName"];
         $handle->image_x = 900;
-        $handle->image_y = 500;
+        $handle->image_y = 1200;
 
         $handle->Process($dir_dest);
 

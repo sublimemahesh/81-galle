@@ -133,12 +133,12 @@
                                     foreach ($MENU_TYPE as $menu) {
                                         ?>
 
-                                        <div class="col-sm-6 col-md-6">
+                                        <div class="col-sm-6 col-md-4">
                                             <div class="single-news">
                                                 <figure>
                                                     <a href="view-menu.php?id=<?php echo $menu["id"]; ?>"><img src="upload/menu-type/<?php echo $menu['image_name']; ?>" alt="news"/></a>
                                                     <figcaption>
-                                                        <h4 class="date" style="margin-top: 13px;"><a class="category_title" href="view-menu.php?id=<?php echo $menu["id"]; ?>" title=""><?php echo $menu['name']; ?></a></h4> 
+                                                        <h4 class="date" style="margin-top: 20px;"><a class="category_title" href="view-menu.php?id=<?php echo $menu["id"]; ?>" title=""><?php echo $menu['name']; ?></a></h4> 
                                                     </figcaption>
                                                 </figure>
                                             </div>

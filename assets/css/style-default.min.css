@@ -2086,14 +2086,13 @@ blockquote:before{
     bottom:1.6rem;
     left:1.6rem;
     border-radius:4px;
-    width: 197px;
-    height: 50px;
-    transition-duration:.5s
+   width: 92%;
+   
 }
 .csi-news .single-news figure figcaption .date{
     font-family:Cookie,cursive;
     font-size:26px;
-   font-size: 5.6rem;
+    font-size: 5.6rem;
     font-weight:900;
     text-align:center;
     color:#00695c;

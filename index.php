@@ -1,5 +1,7 @@
 <!doctype html>
-<?php include_once './class/include.php'; ?>
+<?php
+include_once './class/include.php';
+?>
 <html class="no-js" lang="en">
 
     <head>
@@ -197,247 +199,93 @@
                                         <ul class="nav nav-pills csi-nav-pills">
                                             <?php
                                             $MENU_TYPE = MenuType::all();
-                                            foreach ($MENU_TYPE as $key => $menu) {
+                                            foreach ($MENU_TYPE as $key => $menu_type) {
                                                 if ($key < 5) {
-                                                    ?>
-                                                    <li><a data-toggle="pill" href="#menu<?php echo $menu["id"]; ?>"><img src="assets/img/tab-menu2.png" alt=""> <?php echo $menu["name"]; ?></a></li>
-                                                    <?php
+                                                    if ($key == 0) {
+                                                        ?>
+                                                        <li class="active"><a data-toggle="pill" href="#menu<?php echo $menu_type["id"]; ?>"><img src="assets/img/tab-menu2.png" alt=""> <?php echo $menu_type["name"]; ?></a></li>
+                                                        <?php
+                                                    } else {
+                                                        ?>
+                                                        <li><a data-toggle="pill" href="#menu<?php echo $menu_type["id"]; ?>"><img src="assets/img/tab-menu2.png" alt=""> <?php echo $menu_type["name"]; ?></a></li>
+
+                                                        <?php
+                                                    }
                                                 }
                                             }
                                             ?>
+                                                        <li><a href="menu.php"><img src="" alt="">All</a></li>
+                                                    
                                         </ul>
                                     </div>
 
                                     <div class="tab-content csi-tab-content">
                                         <?php
-                                        foreach ($MENU_TYPE as $key => $menu) {
+                                        foreach ($MENU_TYPE as $key => $menu_type) {
                                             if ($key == 0) {
                                                 ?>
 
-                                                <div id="#menu<?php echo $menu["id"]; ?>" class="tab-pane fade in active">
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item1.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
-                                                                    <p class="price">
-                                                                        150<span>$</span>
+                                                <div id="menu<?php echo $menu_type["id"]; ?>" class="tab-pane fade in active">
+                                                    <?php
+                                                    $MENU = Menu::getMenusById($menu_type["id"]);
+                                                    foreach ($MENU as $menu) {
+                                                        ?>
+
+                                                        <div class="csi-single-tab">
+                                                            <div class="menu-thumb">
+                                                                <a href="index.php"><img src="upload/menu/<?php echo $menu['image_name']; ?>" alt=""></a>
+                                                            </div>
+                                                            <div class="menu-content">
+                                                                <div class="csi-info">
+                                                                    <div class="title-area">
+                                                                        <h3 class="title"><a href="index.php"><?php echo $menu['name']; ?></a></h3>
+                                                                        <p class="price">
+                                                                            Rs.<?php echo $menu["price"]; ?>.00<span></span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        <?php echo $menu["description"]; ?></h3>
                                                                     </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt
-                                                                </p>
-                                                            </div> <!--//.single tab-->
+                                                                </div> <!--//.single tab-->
+                                                            </div>
                                                         </div>
-                                                    </div><!--//.csi-single-tab-->
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Chocolate Milkshake</a></h3>
-                                                                    <p class="price">
-                                                                        150<span>$</span>
-                                                                    </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt
-                                                                </p>
-                                                            </div> <!--//.single tab-->
-                                                        </div>
-                                                    </div><!--//.csi-single-tab-->
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Caesar Salad</a></h3>
-                                                                    <p class="price">
-                                                                        70<span>$</span>
-                                                                    </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt
-                                                                </p>
-                                                            </div> <!--//.single tab-->
-                                                        </div>
-                                                    </div><!--//.csi-single-tab-->
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Black Bean Burger</a></h3>
-                                                                    <p class="price">
-                                                                        150<span>$</span>
-                                                                    </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt
-                                                                </p>
-                                                            </div> <!--//.single tab-->
-                                                        </div>
-                                                    </div><!--//.csi-single-tab-->
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Caesar Salad</a></h3>
-                                                                    <p class="price">
-                                                                        70<span>$</span>
-                                                                    </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt
-                                                                </p>
-                                                            </div> <!--//.single tab-->
-                                                        </div>
-                                                    </div><!--//.csi-single-tab-->
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Black Bean Burger</a></h3>
-                                                                    <p class="price">
-                                                                        150<span>$</span>
-                                                                    </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt
-                                                                </p>
-                                                            </div> <!--//.single tab-->
-                                                        </div>
-                                                    </div><!--//.csi-single-tab-->
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Caesar Salad</a></h3>
-                                                                    <p class="price">
-                                                                        70<span>$</span>
-                                                                    </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt
-                                                                </p>
-                                                            </div> <!--//.single tab-->
-                                                        </div>
-                                                    </div><!--//.csi-single-tab-->
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Black Bean Burger</a></h3>
-                                                                    <p class="price">
-                                                                        150<span>$</span>
-                                                                    </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt
-                                                                </p>
-                                                            </div> <!--//.single tab-->
-                                                        </div>
-                                                    </div><!--//.csi-single-tab-->
+
+                                                        <?php
+                                                    }
+                                                    ?>
                                                 </div>
                                                 <?php
                                             } else {
                                                 ?>
-                                                <div id="#menu<?php echo $menu["id"]; ?>" class="tab-pane fade">
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item3.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
-                                                                    <p class="price">
-                                                                        150<span>$</span>
+                                                <div id="menu<?php echo $menu_type["id"]; ?>" class="tab-pane fade in">
+                                                    <?php
+                                                    $MENU = Menu::getMenusById($menu_type["id"]);
+                                                    foreach ($MENU as $menu) {
+                                                        ?>
+
+                                                        <div class="csi-single-tab">
+                                                            <div class="menu-thumb">
+                                                                <a href="index.php"><img src="upload/menu/<?php echo $menu['image_name']; ?>" alt=""></a>
+                                                            </div>
+                                                            <div class="menu-content">
+                                                                <div class="csi-info">
+                                                                    <div class="title-area">
+                                                                        <h3 class="title"><a href="index.php"><?php echo $menu['name']; ?></a></h3>
+                                                                        <p class="price">
+                                                                            Rs.<?php echo $menu["price"]; ?>.00<span></span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        <?php echo $menu["description"]; ?></h3>
                                                                     </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Nullam varius a felis eu dictum.
-                                                                </p>
-                                                            </div> <!--//.single tab-->
-                                                        </div>
-                                                    </div><!--//.csi-single-tab-->
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item4.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
-                                                                    <p class="price">
-                                                                        150<span>$</span>
-                                                                    </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Nullam varius a felis eu dictum.
-                                                                </p>
-                                                            </div> <!--//.single tab-->
-                                                        </div>
-                                                    </div><!--//.csi-single-tab-->
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item5.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
-                                                                    <p class="price">
-                                                                        150<span>$</span>
-                                                                    </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Nullam varius a felis eu dictum.
-                                                                </p>
-                                                            </div> <!--//.single tab-->
-                                                        </div>
-                                                    </div><!--//.csi-single-tab-->
-                                                    <div class="csi-single-tab">
-                                                        <div class="menu-thumb">
-                                                            <a href="single-item.html"><img src="assets/img/speacial-item/special-item6.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="menu-content">
-                                                            <div class="csi-info">
-                                                                <div class="title-area">
-                                                                    <h3 class="title"><a href="single-item.html">Pizza Mexicana</a></h3>
-                                                                    <p class="price">
-                                                                        150<span>$</span>
-                                                                    </p>
-                                                                </div>
-                                                                <p class="text">
-                                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Nullam varius a felis eu dictum.
-                                                                </p>
-                                                            </div> <!--//.single tab-->
-                                                        </div>
-                                                    </div><!--//.csi-single-tab-->
+                                                                </div> <!--//.single tab-->
+                                                            </div>
+                                                        </div><!--//.csi-single-tab-->
+                                                        <?php
+                                                    }
+                                                    ?>
                                                 </div>
-                                                
+
                                                 <?php
                                             }
                                         }
