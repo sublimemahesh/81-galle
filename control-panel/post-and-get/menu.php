@@ -7,10 +7,10 @@ if (isset($_POST['create'])) {
     $MENU = new Menu(NULL);
     $VALID = new Validator();
 
-    $MENU->type = mysql_real_escape_string($_POST['type']);
-    $MENU->name = mysql_real_escape_string($_POST['name']);
-    $MENU->price = mysql_real_escape_string($_POST['price']);
-    $MENU->description = mysql_real_escape_string($_POST['description']);
+    $MENU->type = $_POST['type'];
+    $MENU->name = $_POST['name'];
+    $MENU->price = $_POST['price'];
+    $MENU->description = $_POST['description'];
 
     $dir_dest = '../../upload/menu/';
 
@@ -94,9 +94,9 @@ if (isset($_POST['update'])) {
     $MENU->id = $_POST['id'];
     $MENU->type = $_POST['type'];
     $MENU->image_name = $_POST['oldImageName'];
-    $MENU->name = mysql_real_escape_string($_POST['name']);
-    $MENU->price = mysql_real_escape_string($_POST['price']);
-    $MENU->description = mysql_real_escape_string($_POST['description']);
+    $MENU->name = $_POST['name'];
+    $MENU->price = $_POST['price'];
+    $MENU->description = $_POST['description'];
 
 
 

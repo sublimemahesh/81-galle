@@ -268,7 +268,7 @@ include_once './class/include.php';
 
                                                         <div class="csi-single-tab">
                                                             <div class="menu-thumb">
-                                                                <a href="index.php"><img src="upload/menu/<?php echo $menu['image_name']; ?>" alt=""></a>
+                                                                   <a href="view-single-item.php?id=<?php echo $menu['id'];?>"><img src="upload/menu/<?php echo $menu['image_name']; ?>" alt=""></a>
                                                             </div>
                                                             <div class="menu-content">
                                                                 <div class="csi-info">

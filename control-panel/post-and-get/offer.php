@@ -7,10 +7,10 @@ if (isset($_POST['create'])) {
     $OFFER = new Offer(NULL);
     $VALID = new Validator();
 
-    $OFFER->title = mysql_real_escape_string($_POST['title']);
-    $OFFER->short_description = mysql_real_escape_string($_POST['short_description']);
-    $OFFER->price = mysql_real_escape_string($_POST['price']);
-    $OFFER->discount = mysql_real_escape_string($_POST['discount']);
+    $OFFER->title = $_POST['title'];
+    $OFFER->short_description = $_POST['short_description'];
+    $OFFER->price = $_POST['price'];
+    $OFFER->discount = $_POST['discount'];
 
     $dir_dest = '../../upload/offer/';
 
@@ -95,10 +95,10 @@ if (isset($_POST['update'])) {
     $OFFER = new Offer($_POST['id']);
 
     $OFFER->image_name = $_POST['oldImageName'];
-    $OFFER->title = mysql_real_escape_string($_POST['title']);
-    $OFFER->short_description = mysql_real_escape_string($_POST['short_description']);
-    $OFFER->price = mysql_real_escape_string($_POST['price']);
-    $OFFER->discount = mysql_real_escape_string($_POST['discount']);
+    $OFFER->title = $_POST['title'];
+    $OFFER->short_description = $_POST['short_description'];
+    $OFFER->price = $_POST['price'];
+    $OFFER->discount = $_POST['discount'];
 
     $VALID = new Validator();
 

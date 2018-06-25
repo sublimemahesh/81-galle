@@ -7,9 +7,9 @@ if (isset($_POST['create'])) {
     $SLIDER = new Slider(NULL);
     $VALID = new Validator();
 
-    $SLIDER->title = mysql_real_escape_string($_POST['title']);
-    $SLIDER->description = mysql_real_escape_string($_POST['description']);
-    $SLIDER->url =  mysql_real_escape_string($_POST['url']);
+    $SLIDER->title = $_POST['title'];
+    $SLIDER->description = $_POST['description'];
+    $SLIDER->url = $_POST['url'];
 
     $dir_dest = '../../upload/slider/';
 

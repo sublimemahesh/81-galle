@@ -7,8 +7,8 @@ if (isset($_POST['create'])) {
     $PAGES = new Page(NULL);
     $VALID = new Validator();
 
-    $PAGES->title = mysql_real_escape_string($_POST['title']);
-    $PAGES->description = mysql_real_escape_string($_POST['description']);
+    $PAGES->title = $_POST['title'];
+    $PAGES->description = $_POST['description'];
 
     $dir_dest = '../../upload/page/';
 
@@ -90,8 +90,8 @@ if (isset($_POST['update'])) {
     $PAGES = new Page($_POST['id']);
 
     $PAGES->image_name = $_POST['oldImageName'];
-    $PAGES->title = mysql_real_escape_string($_POST['title']);
-    $PAGES->description = mysql_real_escape_string($_POST['description']);
+    $PAGES->title = $_POST['title'];
+    $PAGES->description = $_POST['description'];
 
 
     $VALID = new Validator();

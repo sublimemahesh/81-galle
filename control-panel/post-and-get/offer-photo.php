@@ -8,7 +8,7 @@ if (isset($_POST['create'])) {
     $VALID = new Validator();
 
     $OFFER_PHOTO->offer = $_POST['id'];
-    $OFFER_PHOTO->caption = mysql_real_escape_string($_POST['caption']);
+    $OFFER_PHOTO->caption = $_POST['caption'];
 
     $dir_dest = '../../upload/offer/gallery/';
     $dir_dest_thumb = '../../upload/offer/gallery/thumb/';
