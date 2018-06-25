@@ -157,7 +157,7 @@ if (isset($_GET['id'])) {
                                                                 </p>
                                                             </div>
                                                             <p class="text">
-                                                                <?php echo substr($menu["description"], 0, 80) . '...'; ?>
+                                                                <?php echo substr($menu["description"], 0, 50) . '...'; ?>
                                                             </p>
                                                         </div> <!--//.single tab-->
                                                     </div>

@@ -7,7 +7,7 @@ if (isset($_POST['create'])) {
     $MENU_TYPE = new MenuType(NULL);
     $VALID = new Validator();
 
-    $MENU_TYPE->name = mysql_real_escape_string($_POST['name']);
+    $MENU_TYPE->name = $_POST['name'];
 
     $dir_dest = '../../upload/menu-type/';
 
@@ -90,7 +90,7 @@ if (isset($_POST['update'])) {
 
     $MENU_TYPE->id = $_POST['id'];
     $MENU_TYPE->image_name = $_POST['oldImageName'];
-    $MENU_TYPE->name = mysql_real_escape_string($_POST['name']);
+    $MENU_TYPE->name = $_POST['name'];
 
     $VALID = new Validator();
     $VALID->check($MENU_TYPE, [

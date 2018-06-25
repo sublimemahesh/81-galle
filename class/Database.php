@@ -12,9 +12,9 @@ class Database {
 
     
 //    private $host = 'kelum818.ipagemysql.com';
-//    private $name = 'masalagewatta';
-//    private $user = 'masalagewatta';
-//    private $password = 'Masal@903430';
+//    private $name = '81galle';
+//    private $user = '81_galle';
+//    private $password = 'K<Ezk[Vf9S4?f^*a';
      
     private $host = 'localhost';
     private $name = '81_galle';

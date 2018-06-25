@@ -7,7 +7,7 @@ if (isset($_POST['create'])) {
     $BANNER = new Banner(NULL);
     $VALID = new Validator();
 
-    $BANNER->title = mysql_real_escape_string($_POST['title']);
+    $BANNER->title = $_POST['title'];
 
     $dir_dest = '../../upload/banner/';
 
@@ -88,7 +88,7 @@ if (isset($_POST['update'])) {
     $BANNER = new Banner($_POST['id']);
 
     $BANNER->image_name = $_POST['oldImageName'];
-    $BANNER->title = mysql_real_escape_string($_POST['title']);
+    $BANNER->title = $_POST['title'];
 
     $VALID = new Validator();
     $VALID->check($BANNER, [
