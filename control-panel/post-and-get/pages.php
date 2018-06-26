@@ -12,7 +12,7 @@ if (isset($_POST['create'])) {
 
     $dir_dest = '../../upload/page/';
 
-    $handle = new Upload($_FILES['image']);
+    $handle = new Upload($_FILES['image_name']);
 
     $imgName = null;
 
@@ -21,8 +21,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = Helper::randamId();
-        $handle->image_x = 422;
-        $handle->image_y = 513;
+        $handle->image_x = 1141;
+        $handle->image_y = 320;
 
         $handle->Process($dir_dest);
 
@@ -31,7 +31,7 @@ if (isset($_POST['create'])) {
             $imgName = $handle->file_dst_name;
         }
     }
-
+    
     $PAGES->image_name = $imgName;
 
     $VALID->check($PAGES, [
@@ -76,8 +76,8 @@ if (isset($_POST['update'])) {
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $_POST ["oldImageName"];
-        $handle->image_x = 422;
-        $handle->image_y = 513;
+        $handle->image_x = 1141;
+        $handle->image_y = 320;
 
         $handle->Process($dir_dest);
 

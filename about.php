@@ -1,4 +1,5 @@
 <!doctype html>
+<?php include_once './class/include.php'; ?>
 <html class="no-js" lang="en">
 
     <!-- Mirrored from httpcoder.com/demo/html/foodking/view/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Jun 2018 04:59:03 GMT -->
@@ -9,7 +10,7 @@
         <!-- The above 3 meta tags *must* come first in the head -->
 
         <!-- SITE TITLE -->
-        <title>FoodKing</title>
+        <title>81-Galle</title>
         <meta name="description" content="Food, Restaurant & Cafe HTML Template" />
         <meta name="keywords" content="Food, Restaurant, Cafe, Responsive, HTML5" />
         <meta name="author" content="httpcoder.com" />
@@ -104,7 +105,7 @@
                                             About Our History
                                         </h2>
                                         <ul class="breadcrumb">
-                                            <li><a href="index.html"><i class="icon-home6"></i>Home</a></li>
+                                            <li><a href="index.php"><i class="icon-home6"></i>Home</a></li>
                                             <li class="active">Contact</li>
                                         </ul>
                                     </div>
@@ -120,31 +121,31 @@
 
             <!--ABOUT-->
             <section>
-                <div id="csi-about" class="csi-about csi-about-inner">
+                <div id="csi-about" class="csi-about">
                     <div class="csi-inner">
                         <div class="container">
                             <div class="row">
-                                <div class="col-xs-12">
+                                <?php
+                                $PAGE = new Page(4);
+                                ?>
+                                <div class="col-xs-12" style="margin-bottom: -50px;">
                                     <div class="csi-heading">
                                         <h3 class="subtitle">About our History</h3>
-                                        <h2 class="title">Welcome to The Foodking</h2>
+                                        <h2 class="title"><?php echo $PAGE->title ?></h2>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="csi-about-content">
-                                        <p>
-                                            We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                            Praesent non nunc turpis. Cras vel pretium ligula, ut lacinia lorem. Sed porttitor efficitur arcu, eu vehicula augue suscipit a. Sed vitae est vel elit vulputate sollicitudin. Donec vel est dui. Morbi at diam euismod, tincidunt ante eu, convallis quam. In vitae viverra sem. Vivamus vestibulum velit eu dolor dignissim, ac suscipit velit vehicula. Donec eleifend sem massa, et euismod orci tempus ut. Integer non semper turpis, sit amet elementum velit. Aliquam tincidunt posuere pulvinar. Vestibulum faucibus felis quis blandit ornare. Praesent semper ultricies neque ut efficitur. Nullam euismod massa ac suscipit tristique. Donec id elementum eros. Quisque semper suscipit mi, nec faucibus velit hendrerit nec.
+                                        <p class="text">
+                                            <?php echo $PAGE->description ?>
                                         </p>
-                                        <p>
-                                            We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                            semper suscipit mi, nec faucibus velit hendrerit nec.
-                                        </p>
+                                        <img src="upload/page/<?php echo $PAGE->image_name ?>" alt="">
                                     </div>
                                 </div>
                             </div>
+                            
                         </div><!-- //.CONTAINER -->
                     </div><!-- //.INNER -->
                 </div>
@@ -212,7 +213,7 @@
 
 
             <!--MILESTONE-->
-         
+
             <!--MILESTONE END-->
 
 

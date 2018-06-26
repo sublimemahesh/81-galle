@@ -98,14 +98,18 @@ include_once './class/include.php';
             <!--ABOUT TOP END-->
 
             <!--ABOUT-->
-            <section>
+               <section>
                 <div id="csi-about" class="csi-about">
                     <div class="csi-inner">
                         <div class="container">
                             <div class="row">
-                                <div class="col-xs-12">
+                                <?php
+                                $PAGE = new Page(4);
+                                ?>
+                                <div class="col-xs-12" style="margin-bottom: -50px;">
                                     <div class="csi-heading">
-                                        <h2 class="title">Welcome to The Eighty one</h2>
+                                        <h3 class="subtitle">About our History</h3>
+                                        <h2 class="title"><?php echo $PAGE->title ?></h2>
                                     </div>
                                 </div>
                             </div>
@@ -113,12 +117,13 @@ include_once './class/include.php';
                                 <div class="col-xs-12">
                                     <div class="csi-about-content">
                                         <p class="text">
-                                            We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                            <?php echo $PAGE->description ?>
                                         </p>
-                                        <img src="assets/img/about-bottom.jpg" alt="about team">
+                                        <img src="upload/page/<?php echo $PAGE->image_name ?>" alt="">
                                     </div>
                                 </div>
                             </div>
+                            
                         </div><!-- //.CONTAINER -->
                     </div><!-- //.INNER -->
                 </div>

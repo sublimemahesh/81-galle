@@ -129,7 +129,7 @@
                                     <div class="csi-box">
                                         <span class="csi-icon"><i class="fa fa-headphones"></i></span>
                                         <div class="address">
-                                            <p>+2545-8546-XXX</p>
+                                            <p> (+94) 91 312 7744</p>
                                             <p>+2545-8546-XXX</p>
                                         </div>
                                     </div>
