@@ -73,21 +73,21 @@ include_once './class/include.php';
                                     <div class="about-top-single">
                                         <a href="#"><img src=assets/img/about-icon.png alt="about-icon"></a>
                                         <h3 class="title"><a href="#">Hot & Delicious</a></h3>
-                                        <p>Beetroot water spinach okra water chestnut ricebean pea.</p>
+                                        <p>Wide range of delicious international and traditional Asian cuisine.</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="about-top-single">
                                         <a href="#"><img src=assets/img/about-icon2.png alt="about-icon"></a>
                                         <h3 class="title"><a href="#">No Added Msg</a></h3>
-                                        <p>Beetroot water spinach okra water chestnut ricebean pea.</p>
+                                        <p>More natural and healthier food items without adding flavour enhancers.</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="about-top-single">
                                         <a href="#"><img src=assets/img/about-icon3.png alt="about-icon"></a>
                                         <h3 class="title"><a href="#">Ice Shakes</a></h3>
-                                        <p>Beetroot water spinach okra water chestnut ricebean pea.</p>
+                                        <p>Special Ice Shakes with milk, ice cream, iced milk and flavorings.</p>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +247,7 @@ include_once './class/include.php';
                                                                         </p>
                                                                     </div>
                                                                     <p class="text">
-                                                                        <?php echo substr($menu['description'], 0, 80) . '...'; ?>
+                                                                        <?php echo substr($menu['description'], 0, 50) . '...'; ?>
                                                                     </p>
                                                                 </div> <!--//.single tab-->
                                                             </div>
@@ -273,13 +273,13 @@ include_once './class/include.php';
                                                             <div class="menu-content">
                                                                 <div class="csi-info">
                                                                     <div class="title-area">
-                                                                        <h3 class="title"><a href="index.php"><?php echo $menu['name']; ?></a></h3>
+                                                                        <h3 class="title"><a href="index.php"> <?php echo substr($menu['name'], 0, 15) . '...'; ?></a></h3>
                                                                         <p class="price">
                                                                             Rs.<?php echo $menu["price"]; ?>.00<span></span>
                                                                         </p>
                                                                     </div>
                                                                     <p class="text">
-                                                                        <?php echo $menu["description"]; ?></h3>
+                                                                          <?php echo substr($menu['description'], 0, 50) . '...'; ?></h3>
                                                                     </p>
                                                                 </div> <!--//.single tab-->
                                                             </div>
