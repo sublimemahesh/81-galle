@@ -138,7 +138,7 @@
                                                 <figure>
                                                     <a href="view-menu.php?id=<?php echo $menu["id"]; ?>"><img src="upload/menu-type/<?php echo $menu['image_name']; ?>" alt="news"/></a>
                                                     <figcaption>
-                                                        <h4 class="date" style="margin-top: 20px;"><a class="category_title" href="view-menu.php?id=<?php echo $menu["id"]; ?>" title=""><?php echo $menu['name']; ?></a></h4> 
+                                                        <h4 class="date" style="margin-top: 30px;padding-bottom: 7px;"><a class="category_title" href="view-menu.php?id=<?php echo $menu["id"]; ?>" title=""><?php echo $menu['name']; ?></a></h4> 
                                                     </figcaption>
                                                 </figure>
                                             </div>
