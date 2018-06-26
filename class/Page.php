@@ -21,7 +21,7 @@ class Page {
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`title`,`description`,`image_name` FROM `pages` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`title`,`description`,`image_name` FROM `page` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -34,12 +34,13 @@ class Page {
 
 
             return $this;
+           
         }
     }
 
     public function create() {
 
-        $query = "INSERT INTO `pages` (`title`,`description`,`image_name`) VALUES  ('"
+        $query = "INSERT INTO `page` (`title`,`description`,`image_name`) VALUES  ('"
                
                 . $this->title . "','"
                 . $this->description . "', '"
@@ -61,7 +62,7 @@ class Page {
 
     public function all() {
 
-        $query = "SELECT * FROM `pages`";
+        $query = "SELECT * FROM `page`";
         $db = new Database();
         $result = $db->readQuery($query);
         $array_res = array();
@@ -75,7 +76,7 @@ class Page {
 
     public function update() {
 
-        $query = "UPDATE  `pages` SET "
+        $query = "UPDATE  `page` SET "
                 . "`title` ='" . $this->title . "', "
                 . "`description` ='" . $this->description . "', "
                 . "`image_name` ='" . $this->image_name . "' "
@@ -94,7 +95,7 @@ class Page {
     
     public function delete() {
 
-        $query = 'DELETE FROM `pages` WHERE id="' . $this->id . '"';
+        $query = 'DELETE FROM `page` WHERE id="' . $this->id . '"';
         unlink(Helper::getSitePath() . "upload/page/" . $this->image_name);
 
         $db = new Database();

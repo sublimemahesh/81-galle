@@ -70,12 +70,12 @@ $PAGES = new Page($id);
                                             </div>
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                            <label for="image">Image</label>
+                                            <label for="image_name">Image</label>
                                         </div>
                                         <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                             <div class="form-group">
                                                 <div class="form-line">
-                                                    <input type="file" id="image" class="form-control" name="image" >
+                                                    <input type="file" id="image_name" class="form-control" name="image_name" >
                                                 </div>
                                             </div>
                                         </div>
