@@ -2,12 +2,12 @@
 
 //----------------------Company Information---------------------
 
-$comany_name = " Boulders Bay Hotel ";
-$website_name = "www.bouldersbay.com";
+$comany_name = " eighty one restaurent ";
+$website_name = "";
 $comConNumber = " +94 91 222 8 353 | +94 077 291 1327";
 //$comEmail = "info@bouldersbay.com";
-$comEmail = "info@bouldersbay.com";
-$from = "info@bouldersbay.com";
+$comEmail = "mganisansala@gmail.com";
+$from = "mganisansala@gmail.com";
 
 //----------------------CAPTCHACODE---------------------
 session_start();
@@ -26,7 +26,6 @@ if ($_SESSION['CAPTCHACODE'] != $_POST['captchacode']) {
 
 $visitor_name = $_POST['visitor_name'];
 $visitor_email = $_POST['visitor_email'];
-$visitor_phone = $_POST['visitor_phone'];
 $subject = 'New Website Enquiry - ' . $_POST['subject'];
 $message = $_POST['message'];
 

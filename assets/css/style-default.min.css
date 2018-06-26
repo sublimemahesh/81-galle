@@ -2086,8 +2086,8 @@ blockquote:before{
     bottom:1.6rem;
     left:1.6rem;
     border-radius:4px;
-   width: 92%;
-   
+    width: 92%;
+
 }
 .csi-news .single-news figure figcaption .date{
     font-family:Cookie,cursive;
@@ -3108,7 +3108,7 @@ textarea.form-control{
     text-align:center
 }
 .csi-contact .csi-contactform .csi-send{
-    margin-top:1rem
+    margin-top: 3rem;
 }
 .csi-contact .help-block{
     color:#e74f3f;
@@ -3586,5 +3586,5 @@ textarea.form-control{
     .csi-slider .owl-carousel .owl-item,.csi-slider .owl-carousel .owl-item img{
         height:350px
     }
-   
+
 }

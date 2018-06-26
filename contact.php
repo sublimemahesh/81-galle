@@ -74,7 +74,8 @@
 
         <!-- MODERNIZER CSS  -->
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-
+        <link href="contact-form/style.css" rel="stylesheet" type="text/css"/>
+        <script src="contact-form/scripts.js" type="text/javascript"></script>
     </head>
     <body class="page page-template">
 
@@ -151,46 +152,72 @@
                             </div>
                             <div class="contact-top-right">
                                 <div class="innerpage-section">
-                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.716723132564!2d80.21369891476817!3d6.033559295630301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb5c8067f1%3A0x4768397502edf93!2sSublime+Holdings!5e0!3m2!1sen!2slk!4v1528880526695" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    <iframe src="" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-offset-2 col-sm-8">
-                                    <form method="POST" class="csi-contactform" action="http://httpcoder.com/demo/html/foodking/view/php/form-handler.php">
-                                        <div class="form-group">
-                                            <input type="text" name="csiname" class="form-control csiname" id="csiname" placeholder="Enter Your Name ..." required>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" name="csiemail" class="form-control csiemail" id="csiemail" placeholder="Enter Email address ..." required>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" name="csisubject" class="form-control csisubject" id="csisubject" placeholder="Enter Email Subject ..." required>
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea class="form-control csimessage" name="csimessage" id="csimessage" rows="5" placeholder="Leave me A Massage ..." required></textarea>
-                                        </div>
-                                        <button type="submit" name="submit" value="contact-form" class="csi-btn hvr-glow hvr-radial-out csisend csi-send">Send Massage</button>
-                                    </form>
-                                    <!-- MODAL SECTION -->
-                                    <div id="csi-form-modal" class="modal fade csi-form-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg">
-                                            <div class="modal-content csi-modal-content">
-                                                <div class="modal-header csi-modal-header">
-                                                    <button type="button" class="close brand-color-hover" data-dismiss="modal" aria-label="Close">
-                                                        <i class="fa fa-power-off"></i>
-                                                    </button>
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 col-sm-7 col-xs-12">
+                                <div class="contact-form-area">
+                                    <div class="cf-msg"></div>
+                                    <div class="row">
+                                        <div class="contactForm">
+                                            <div class="col-xs-12 form-group">
+                                                <div class="cf-input-box">
+                                                    <input type="text" placeholder="Your name here" id="txtFullName" name="txtFullNames" class="form-control">
+                                                    <span id="spanFullName"></span>
                                                 </div>
-                                                <div class="modal-body">
-                                                    <div class="alert csi-form-msg" role="alert"></div>
-                                                </div> <!--//MODAL BODY-->
                                             </div>
-                                        </div>
-                                    </div> <!-- //MODAL -->
-                                </div> <!--//.COL-->
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <div class="cf-input-box">
+                                                    <input type="email" placeholder="Email" id="txtEmail" name="txtEmail" class="form-control">
+                                                    <span id="spanEmail"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <div class="cf-input-box">
+                                                    <input type="text" placeholder="phone Number" id="txtPhone" name="txtPhone" class="form-control">
+                                                    <span id="spanPhone"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                                <div class="cf-input-box">
+                                                    <textarea class="contact-textarea" placeholder="Message" id="txtMessage" name="txtMessage" class="form-control"></textarea>
+                                                    <span id="spanMessage"></span>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group" style="margin-right: 15px">
+                                                <div class="col-xs-12 col-sm-6 col-md-8">
+                                                    <div class="col-sm-6 ">
+                                                        <label for="comment">Security Code:</label>
+                                                        <input style="margin-left: 0px;" type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the code ">
+                                                        <span id="capspan" ></span>
+                                                    </div>
+                                                    <div style="margin-top: 12px;" class="col-sm-6 col-md-6">
+                                                        <?php include("./contact-form/captchacode-widget.php"); ?>
+                                                    </div> 
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-4">
+                                                    <div class="col-sm-4">
+                                                        <div style="margin-top: 52px;" class="div-check" >
+                                                            <img src="contact-form/img/checking.gif" id="checking"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="cf-input-box">
+                                                    <button type="submit" id="btnSubmit" name="btnSubmit" class="cont-submit btn-contact" >SEND MESSAGE</button>
+                                                </div>
+                                            </div>
+                                        </div>   
+
+
+                                        <div id="dismessage" align="center"></div>
+                                    </div>
+                                </div>
                             </div>
-                        </div><!-- //.CONTAINER -->
+                        </div>
                     </div><!-- //.INNER -->
                 </div>
             </section>
@@ -200,6 +227,42 @@
             <?php
             include './footer.php';
             ?>
+            
+              <script>
+        var user_lat, user_lng;
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('googleMap'), {
+                center: {
+                    lat: 23.782906,
+                    lng: 90.415962
+                },
+                zoom: 14,
+                scrollwheel: false
+            });
+            var marker = new google.maps.Marker({
+                position: {
+                    lat: 23.782906,
+                    lng: 90.415962
+                },
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+
+
+
+    </script>
+     <script language='JavaScript' type='text/javascript'>
+
+        function refreshCaptcha() {
+            var img = document.images['captchaimg'];
+            var c = Math.round(Math.random() * 10000);
+            img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + c;
+        }
+
+    </script>
 
 
         </div>
@@ -221,5 +284,5 @@
         <script src="assets/libs/counterup/jquery.counterup.min.js"></script>
         <script src="assets/js/custom.script.js"></script>
         <script src="switcher/js/switcher.js"></script> 
-
+        <script src="contact-form/scripts.js" type="text/javascript"></script>
     </body>
