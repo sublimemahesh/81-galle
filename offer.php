@@ -138,27 +138,31 @@
                                     <?php
                                     $OFFER = Offer::all();
                                     foreach ($OFFER as $offer) {
+                                        $price = $offer['price'];
+                                        $discount = $offer['discount'];
+                                        
+                                        $new_price = $price - ($price*$discount/100)  ;
+                                        
                                         ?>
                                         <div class="col-xs-12 col-sm-6 col-md-4">
                                             <div class="csi-special-single">
                                                 <figure>
                                                     <a href="offer.php"><img src="upload/offer/<?php echo $offer['image_name']; ?>" alt=""></a>
                                                     <figcaption>
-                                                        <div class="csi-hover-link">
-                                                            <div class="csi-vertical">
-                                                                <h3 style="color: cornsilk;"><?php echo $offer["discount"]; ?><span>%</span></h3>
-                                                                </a>
-                                                            </div>
-                                                        </div>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="single-info">
                                                     <div class="price-area">
-                                                        <h3 class="price"><?php echo $offer["price"]; ?>.00<span></span></h3>
+                                                        <h3 class="price"><?php echo $offer["discount"]; ?><span>%</span><p style="margin-top: -10px; border">Off</p></h3>
                                                     </div>
+                                                    <br>
                                                     <div class="speacial-info">
-                                                        <h4 class="subtitle"><?php echo $offer["title"]; ?></h4>
-                                                        <h3 class="title"><?php echo $offer["short_description"]; ?></h3>
+                                                        <div class="discount">
+                                                            <h4 class="subtitle"><span style="text-decoration:line-through;">Rs.<?php echo $offer["price"]; ?></span></h4>
+                                                            <h3 style="color: #009688">Rs <?php echo $new_price;?></h3>
+                                                            <h3 class="title"><?php echo $offer["title"]; ?></h3>
+                                                            <!--                                                            $price - ($price * ($discount/100))-->
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div><!--//.csi-special-single-->
@@ -169,7 +173,7 @@
                                     ?>
                                 </div>
                             </div>
-                    
+
                         </div><!-- //.CONTAINER -->
                     </div><!-- //.INNER -->
                 </div>

@@ -3,8 +3,8 @@
 //----------------------Company Information---------------------
 
 $comany_name = " eighty one restaurent ";
-$website_name = "";
-$comConNumber = " +94 91 222 8 353 | +94 077 291 1327";
+$website_name = "www.eightyone.com";
+$comConNumber = " 0912 228 200|";
 //$comEmail = "info@bouldersbay.com";
 $comEmail = "mganisansala@gmail.com";
 $from = "mganisansala@gmail.com";
