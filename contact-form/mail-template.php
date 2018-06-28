@@ -1,5 +1,4 @@
 <?php
-
 $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -17,7 +16,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="40"></td>
                                         <td width="144">
                                             <a href= "' . $site_link . '" target="_blank"> '
-        . '<img src="' . $site_link . '/contact-form/img/logo.jpg" border="0" alt=""/>
+        . '<img src="' . $site_link . '/contact-form/img/logo.png" border="0" alt=""/>
                                             </a>
                                         </td>
                                         <td width="393">

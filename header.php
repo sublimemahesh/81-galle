@@ -8,18 +8,19 @@
                             <div class="contact">
                                 <ul class="list-inline">
                                     <li><i class="fa fa-clock-o" aria-hidden="true"></i> Openning Hours:  7.00AM - 10.00PM</li>
-                                    <li><i class="fa fa-phone" aria-hidden="true"></i> Call Us:  (+94) 91 312 7744 </li>
+                                    <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:(+94) 91 222 8200"> Call Us:  (+94) 91 222 8200 </a></li>
+                                      
                                 </ul>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="right-menu">
-                                <ul class="list-inline">
-                                    <li><a href="#" style="width: 36px;height: 36px;"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#" style="width: 36px;height: 36px;"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a href="#" style="width: 36px;height: 36px;"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                    <li><a href="#" style="width: 36px;height: 36px;"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                                    <li><a href="#" style="width: 36px;height: 36px;"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                <ul class="list-inline" style="margin-top: 2px;">
+                                    <li><a href="#" style="width: 34px;height: 34px;"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" style="width: 34px;height: 34px;"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" style="width: 34px;height: 34px;"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" style="width: 34px;height: 34px;"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" style="width: 34px;height: 34px;"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -56,8 +57,7 @@
                                                 <li><a href="menu.php">Menu</a></li>
                                                 <li><a href="offer.php">Offer</a></li>
                                                 <li><a href="gallery.php">Gallery</a></li>
-                                                <li><a href="contact.php">Contact Us</a></li>
-                                                <li><a class="csi-btn csi-scroll" href="#csi-reservation">Reservation</a></li>
+                                                <li><a class="csi-btn csi-scroll" href="contact.php">Contact Us</a></li>
                                             </ul>
                                         </div>
                                     </div>

@@ -15,7 +15,7 @@
                             <div class="single">
                                 <h3 class="title">Contact</h3>
                                 <p>Dewamiththa Rd, Galle, Sri Lanka</p>
-                                <p>[email protected]</p>
+                                 <p>0912 228 200</p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-3">
@@ -28,8 +28,7 @@
                         <div class="col-xs-12 col-sm-3">
                             <div class="single">
                                 <h3 class="title">Opening Time</h3>
-                                <p>Mon - Fri 7:00 - 22:00 clock </p>
-                                <p>Sat - Sun 8:00 - 23:00 clock </p>
+                                <p>Mon - Sun 7:00AM - 9:00PM </p>
                             </div>
                         </div> 
                         <div class="col-xs-12 col-sm-3">

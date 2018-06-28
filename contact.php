@@ -152,7 +152,7 @@
                             </div>
                             <div class="contact-top-right">
                                 <div class="innerpage-section">
-                                    <iframe src="" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.702311720379!2d80.21462131476825!3d6.035527895628891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bba208ea51%3A0xc3c2644295947128!2s81+Restaurant!5e0!3m2!1sen!2slk!4v1530158414790" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -176,17 +176,17 @@
                                             </div>
                                             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
                                                 <div class="cf-input-box">
-                                                    <input type="text" placeholder="phone Number" id="txtPhone" name="txtPhone" class="form-control">
+                                                    <input type="text" placeholder="Phone Number" id="txtPhone" name="txtPhone" class="form-control">
                                                     <span id="spanPhone"></span>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                            <div class="col-md-12 col-sm-6 col-xs-12 form-group">
                                                 <div class="cf-input-box">
-                                                    <textarea class="contact-textarea" placeholder="Message" id="txtMessage" name="txtMessage" class="form-control"></textarea>
+                                                    <textarea class="form-control txtMessage" name="txtMessage" id="txtMessage" rows="5" placeholder="Message"></textarea>
                                                     <span id="spanMessage"></span>
                                                 </div>
                                             </div>
-                                            <div class="row form-group" style="margin-right: 15px">
+                                            <div class="row form-group">
                                                 <div class="col-xs-12 col-sm-6 col-md-8">
                                                     <div class="col-sm-6 ">
                                                         <label for="comment">Security Code:</label>
@@ -207,7 +207,7 @@
                                             </div>
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="cf-input-box">
-                                                    <button type="submit" id="btnSubmit" name="btnSubmit" class="cont-submit btn-contact" >SEND MESSAGE</button>
+                                                    <button type="submit" id="btnSubmit" name="btnSubmit" class="csi-btn hvr-glow hvr-radial-out csisend csi-send" >SEND MESSAGE</button>
                                                 </div>
                                             </div>
                                         </div>   
@@ -227,42 +227,42 @@
             <?php
             include './footer.php';
             ?>
-            
-              <script>
-        var user_lat, user_lng;
-        var map;
 
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('googleMap'), {
-                center: {
-                    lat: 23.782906,
-                    lng: 90.415962
-                },
-                zoom: 14,
-                scrollwheel: false
-            });
-            var marker = new google.maps.Marker({
-                position: {
-                    lat: 23.782906,
-                    lng: 90.415962
-                },
-                map: map,
-                title: 'Hello World!'
-            });
-        }
+            <script>
+                var user_lat, user_lng;
+                var map;
+
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('googleMap'), {
+                        center: {
+                            lat: 23.782906,
+                            lng: 90.415962
+                        },
+                        zoom: 14,
+                        scrollwheel: false
+                    });
+                    var marker = new google.maps.Marker({
+                        position: {
+                            lat: 23.782906,
+                            lng: 90.415962
+                        },
+                        map: map,
+                        title: 'Hello World!'
+                    });
+                }
 
 
 
-    </script>
-     <script language='JavaScript' type='text/javascript'>
+            </script>
+            <script language='JavaScript' type='text/javascript'>
 
-        function refreshCaptcha() {
-            var img = document.images['captchaimg'];
-            var c = Math.round(Math.random() * 10000);
-            img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + c;
-        }
+                function refreshCaptcha() {
+                    var img = document.images['captchaimg'];
+                    var c = Math.round(Math.random() * 10000);
+                    img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + c;
+                }
 
-    </script>
+            </script>
 
 
         </div>

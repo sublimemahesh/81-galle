@@ -41,7 +41,7 @@ p{
 .h3,h3{
     font-size:2.6rem;
     line-height:3.9000000000000004rem;
-    line-height:4.2rem
+    line-height: 0.2rem;
 }
 .h4,.h5,h4,h5{
     font-size:1.6rem
@@ -106,7 +106,7 @@ blockquote,blockquote p{
     background:rgba(230,43,76,.1)
 }
 a{
-    color:#fff;
+    color:#00695c;
     -moz-transition-duration:.3s;
     -webkit-transition-duration:.3s;
     -o-transition-duration:.3s;
@@ -118,7 +118,7 @@ a{
     -o-transition-duration:.3s
 }
 a.active,a:focus,a:hover{
-    color:#eb5973
+    color:#00695c;
 }
 .csi-inner{
     padding:11rem 0
@@ -469,8 +469,8 @@ blockquote:before{
     transition-duration:.6s
 }
 .csi-header .header-top .header-top-inner .right-menu ul li a i{
-    font-size:26px;
-    line-height:39px
+    font-size: 18px;
+line-height: 32px;
 }
 .csi-header .header-top .header-top-inner .right-menu ul li a .fa-twitter{
     color:#1da1f2
@@ -1532,10 +1532,10 @@ blockquote:before{
     border-radius:50%;
     width: 115px;
     height: 90px;
-    font-family:Cookie,cursive;
+    font-family:fantasy;
     font-size:2.6rem;
     line-height:3.9000000000000004rem;
-    line-height:6rem;
+  line-height: 5rem;
     color:#212739;
     display:inline-block
 }
@@ -1543,13 +1543,12 @@ blockquote:before{
     font-family:Lato,sans-serif;
     font-size:1.6rem;
     line-height:2.4000000000000004rem;
-    color:#00695c;
+    color:#000;
     font-weight:400
 }
 .csi-special-single .single-info .subtitle{
-    font-family:Cookie,cursive;
-    font-size:2.6rem;
-    line-height:3.9000000000000004rem;
+    font-family:fantasy;
+   line-height: 0.9rem;
     color:#00695c;
     margin:0;
     font-weight:400
@@ -1557,7 +1556,7 @@ blockquote:before{
 .csi-special-single .single-info .title{
     font-family:Lato,sans-serif;
     font-size:2.6rem;
-    line-height:3.9000000000000004rem;
+    line-height: 6.9rem;
     color:#212739;
     font-weight:900;
     margin:0
@@ -3102,7 +3101,8 @@ textarea.form-control{
     margin:0
 }
 .csi-contact .contact-top-area .contact-top-right{
-    width:50%
+    width:50%;
+        margin-top: -4px;
 }
 .csi-contact .csi-contactform{
     text-align:center
@@ -3587,4 +3587,15 @@ textarea.form-control{
         height:350px
     }
 
+}
+.discount{
+    font-size: 10px;
+    font-family: inherit;
+}
+.old-discount{
+    color: #411616;
+}
+.new-price{
+    font-size: 10px;
+    color: #1da1f2;
 }
